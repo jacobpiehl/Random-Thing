@@ -10,12 +10,18 @@ html {
 
 body {
     background-image: linear-gradient(
-            to left bottom, 
-            rgba(color(purpur), 0.5),
-            rgba(color(az), 0.5)
+        to left bottom, 
+        rgba(color(az), 0.5),
+        rgba(color(purpur), 0.5)
     ),
-        url(../dist/media/Cloud.gif);
+    url(../media/Neon.gif);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
 }
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+

@@ -7,10 +7,15 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(153, 0, 255, 0.5)), to(rgba(4, 0, 255, 0.5))), url(../dist/media/Cloud.gif);
-  background-image: linear-gradient(to left bottom, rgba(153, 0, 255, 0.5), rgba(4, 0, 255, 0.5)), url(../dist/media/Cloud.gif);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(4, 0, 255, 0.5)), to(rgba(153, 0, 255, 0.5))), url(../media/Neon.gif);
+  background-image: linear-gradient(to left bottom, rgba(4, 0, 255, 0.5), rgba(153, 0, 255, 0.5)), url(../media/Neon.gif);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
