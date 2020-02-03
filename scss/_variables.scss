@@ -31,3 +31,10 @@ $desktop: 1100px;
     @content;
   }
 }
+
+@mixin phone {
+  @media (min-width: #{$phone}) {
+    @content;
+  }
+  
+}
