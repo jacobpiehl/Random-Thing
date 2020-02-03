@@ -7,7 +7,7 @@
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba(3, 10, 6, 0.849),
+        rgba(color(sakura), 0.3),
         rgb(44, 164, 201)
     ),
     url(../media/gate.jpg);
@@ -21,11 +21,11 @@
 
 @keyframes first{
     0% {
-       transform: scaleY(0.3);
+       transform: scaleY(0.3) scaleX(0.3);
 
     }
     100% {
-       transform: scaleY(1);
+       transform: scaleY(1) scaleX(1);
     }
 }
 
@@ -70,10 +70,10 @@
 
 @keyframes turn {
     0% {
-        transform: rotateX(0deg); 
+        transform: rotateY(0deg); 
     } 
 
     100% {
-        transform: rotateX(360deg);
+        transform: rotateY(360deg);
     }
 }

@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(102, 252, 241, 0.7)), to(rgba(197, 198, 199, 0.7))), url(../media/bonsai.jpg);
-  background-image: linear-gradient(to left bottom, rgba(102, 252, 241, 0.7), rgba(197, 198, 199, 0.7)), url(../media/bonsai.jpg);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(58, 139, 219, 0.8)), to(rgba(197, 198, 199, 0.8))), url(../media/bonsai.jpg);
+  background-image: linear-gradient(to left bottom, rgba(58, 139, 219, 0.8), rgba(197, 198, 199, 0.8)), url(../media/bonsai.jpg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -17,8 +17,8 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(3, 10, 6, 0.849)), to(#2ca4c9)), url(../media/gate.jpg);
-  background-image: linear-gradient(to right bottom, rgba(3, 10, 6, 0.849), #2ca4c9), url(../media/gate.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(224, 35, 114, 0.3)), to(#2ca4c9)), url(../media/gate.jpg);
+  background-image: linear-gradient(to right bottom, rgba(224, 35, 114, 0.3), #2ca4c9), url(../media/gate.jpg);
   background-size: cover;
   top: 1.2%;
   -webkit-clip-path: polygon(0 0%, 100% 0, 100% 80vh, 0% 100%);
@@ -33,23 +33,23 @@ body {
 
 @-webkit-keyframes first {
   0% {
-    -webkit-transform: scaleY(0.3);
-            transform: scaleY(0.3);
+    -webkit-transform: scaleY(0.3) scaleX(0.3);
+            transform: scaleY(0.3) scaleX(0.3);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
   }
 }
 
 @keyframes first {
   0% {
-    -webkit-transform: scaleY(0.3);
-            transform: scaleY(0.3);
+    -webkit-transform: scaleY(0.3) scaleX(0.3);
+            transform: scaleY(0.3) scaleX(0.3);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
   }
 }
 
@@ -115,23 +115,23 @@ body {
 
 @-webkit-keyframes turn {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   100% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
 @keyframes turn {
   0% {
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   100% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
