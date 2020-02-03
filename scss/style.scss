@@ -11,10 +11,10 @@ html {
 body {
     background-image: linear-gradient(
         to left bottom, 
-        rgba(color(az), 0.5),
-        rgba(color(purpur), 0.5)
+        rgba(color(primary-dark), 0.7),
+        rgba(color(primary-light), 0.7)
     ),
-    url(../media/Neon.gif);
+    url(../media/bonsai.jpg);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -23,5 +23,69 @@ body {
 .header {
     position: relative;
     height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(253, 117, 117, 0.74),
+        rgb(44, 164, 201)
+    ),
+    url(../media/gate.jpg);
+    background-size: cover;
+    top: 1.2%;
+    clip-path: polygon(0 0%, 100% 0, 100% 80vh, 0% 100%);
+    animation-name: first;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
+@keyframes first{
+    0% {
+       transform: scaleY(0.3);
+
+    }
+    100% {
+       transform: scaleY(1);
+    }
+}
+
+
+.text-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    }
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 6rem;
+    font-family: 'Zhi Mang Xing', cursive;
+    text-shadow: 3px 3px white;
+    @include tablet {
+        font-size: 4rem;
+    }
+    @include laptop {
+        font-size: 10rem;
+    }
+}
+
+.heading:hover {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    color: blue;
+}
+
+
+@keyframes turn {
+    0% {
+        transform: rotateX(0deg); 
+    } 
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
