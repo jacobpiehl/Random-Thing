@@ -13,7 +13,7 @@
     url(../media/gate.jpg);
     background-size: cover;
     top: 1.2%;
-    clip-path: polygon(0 0%, 100% 0, 100% 80vh, 0% 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
     animation-name: first;
     animation-duration: 1s;
     animation-timing-function: ease-out;

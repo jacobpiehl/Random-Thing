@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(58, 139, 219, 0.8)), to(rgba(197, 198, 199, 0.8))), url(../media/bonsai.jpg);
-  background-image: linear-gradient(to left bottom, rgba(58, 139, 219, 0.8), rgba(197, 198, 199, 0.8)), url(../media/bonsai.jpg);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(4, 0, 255, 0.8)), to(rgba(4, 0, 255, 0.7))), url(../media/bonsai.jpg);
+  background-image: linear-gradient(to left bottom, rgba(4, 0, 255, 0.8), rgba(4, 0, 255, 0.7)), url(../media/bonsai.jpg);
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -21,8 +21,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(224, 35, 114, 0.3), #2ca4c9), url(../media/gate.jpg);
   background-size: cover;
   top: 1.2%;
-  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 80vh, 0% 100%);
-          clip-path: polygon(0 0%, 100% 0, 100% 80vh, 0% 100%);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
   -webkit-animation-name: first;
           animation-name: first;
   -webkit-animation-duration: 1s;
