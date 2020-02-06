@@ -9,12 +9,37 @@ html {
 body {
     background-image: linear-gradient(
         to left bottom, 
-        rgba(color(az), 0.8),
-        rgba(color(az), 0.7)
+        rgba(color(gris), 0.8),
+        rgba(color(sakura), 0.8) 
     ),
-    url(../media/bonsai.jpg);
+    url(none);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
 }
 
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(color(primary-dark), 0.3),
+        rgb(44, 164, 201)
+    ),
+    url(../media/tokyo.gif);
+    background-size: cover;
+    top: 1.2%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
+    animation-name: first;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.first {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top,
+        rgba(color()
+    );
+}
