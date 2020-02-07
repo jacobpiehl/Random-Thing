@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(4, 0, 255, 0.8)), to(#06c0f8)), url(../media/tokyo.gif);
-  background-image: linear-gradient(to left bottom, rgba(4, 0, 255, 0.8), #06c0f8), url(../media/tokyo.gif);
+  background-color: #000c4e;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -17,18 +16,27 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(252, 174, 206, 0.3)), to(#2ca4c9)), url(../media/gate.jpg);
-  background-image: linear-gradient(to right bottom, rgba(252, 174, 206, 0.3), #2ca4c9), url(../media/gate.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(#2ca4c9)), url(../media/tokyo.gif);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), #2ca4c9), url(../media/tokyo.gif);
   background-size: cover;
   top: 1.2%;
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
-          clip-path: polygon(50% 0%, 100% 0, 100% 45%, 90% 100%, 10% 100%, 0 45%, 0 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
   -webkit-animation-name: first;
           animation-name: first;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  /*background-image: linear-gradient(
+        to right top,
+        rgba(color()
+    ); */
 }
 
 @-webkit-keyframes first {
