@@ -11,17 +11,6 @@ body {
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.header {
-  position: relative;
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(#2ca4c9)), url(../media/tokyo.gif);
-  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), #2ca4c9), url(../media/tokyo.gif);
-  background-size: cover;
-  top: 1.2%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
-          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
   -webkit-animation-name: first;
           animation-name: first;
   -webkit-animation-duration: 1s;
@@ -30,13 +19,27 @@ body {
           animation-timing-function: ease-out;
 }
 
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+}
+
 .first {
   position: relative;
   height: 100vh;
-  /*background-image: linear-gradient(
-        to right top,
-        rgba(color()
-    ); */
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: 10rem;
 }
 
 @-webkit-keyframes first {
@@ -143,17 +146,63 @@ body {
   }
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000c4e;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: 10rem;
+}
+
 .card {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
 .card-side {
   height: 50px;
   width: 30px;
+  /*font-size: ;*/
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem black;

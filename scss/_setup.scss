@@ -11,6 +11,9 @@ body {
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
+    animation-name: first;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .header {
@@ -19,22 +22,28 @@ body {
     background-image: linear-gradient(
         to right bottom,
         rgba(color(primary-dark), 0.3),
-        rgb(44, 164, 201)
+        rgba(color(primary-light), 0.4)
     ),
-    url(../media/tokyo.gif);
+    url(../media/city.gif);
     background-size: cover;
+    background-position: center;
     top: 1.2%;
     clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
-    animation-name: first;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
 }
 
 .first {
     position: relative;
     height: 100vh;
-    /*background-image: linear-gradient(
-        to right top,
-        rgba(color()
-    ); */
+    width: 100%;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba(20, 1, 1, 0),
+        rgba(0, 4, 219, 0.377)
+    ),
+    url(../media/combination.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: 10rem;
+    
+    
 }
