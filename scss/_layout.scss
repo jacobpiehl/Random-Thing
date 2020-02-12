@@ -1,45 +1,58 @@
 @import "_variables.scss" ;
 @import "_setup.scss";
 .card {
+
     perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+ /*   perspective: 150rem;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    */
 }
 
-
 .card-side {
-    height: 50px;
-    width: 30px;
-    /*font-size: ;*/
+    height: 300px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem black;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+
 }
 
 .card-side-front {
+    background-image: url(..media/Rbridge.jpg);
+    background-position: center;
     position: absolute;
-    top: 40vh;
-    left: 0;
-    z-index: 2;
-    transition: all 1s;
-
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transition: all 1s ease-in;
 }
 
 .card-side-back {
+    background-image: url(..media/fuji.jpg);
+    background-position: center;
     position: absolute;
-    top: 40vh;
-    left: 0;
+    top: 70%;
+    left: 50%;
     z-index: 0;
     transform: rotateY(-180deg);
-    transition: all 1s;
+    transition: all 1s ease-in;
+
 }
 
 .card:hover .card-side-front {
     transform: rotateY(-180deg);
-
+    cursor: pointer;
 }
 
 .card:hover .card-side-back {
     transform: rotateY(0deg);
+    cursor: pointer;
 }

@@ -39,7 +39,10 @@ body {
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
   background-size: cover;
   background-position: center;
-  border: 10rem;
+  border: 15rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @-webkit-keyframes first {
@@ -187,55 +190,71 @@ body {
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
   background-size: cover;
   background-position: center;
-  border: 10rem;
+  border: 15rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   position: relative;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  /*   perspective: 150rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    */
 }
 
 .card-side {
-  height: 50px;
-  width: 30px;
-  /*font-size: ;*/
+  height: 300px;
+  width: 300px;
+  font-size: 15px;
+  color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-box-shadow: 0 1.5rem 4rem black;
-          box-shadow: 0 1.5rem 4rem black;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .card-side-front {
+  background-image: url(..media/Rbridge.jpg);
+  background-position: center;
   position: absolute;
-  top: 40vh;
-  left: 0;
-  z-index: 2;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .card-side-back {
+  background-image: url(..media/fuji.jpg);
+  background-position: center;
   position: absolute;
-  top: 40vh;
-  left: 0;
+  top: 70%;
+  left: 50%;
   z-index: 0;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .card:hover .card-side-front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+  cursor: pointer;
 }
 
 .card:hover .card-side-back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
