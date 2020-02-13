@@ -249,8 +249,22 @@ body {
   position: absolute;
   top: 50%;
   z-index: 2;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
+/*
+.card-side-next {
+    background-image: url("../media/bonsai");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transition: all 1s;
+}*/
 .card-side-back {
   background-image: url("../media/fuji.jpg");
   background-position: center;
