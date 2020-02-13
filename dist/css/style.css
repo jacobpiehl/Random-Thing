@@ -197,22 +197,16 @@ body {
 }
 
 .card1 {
-  -webkit-perspective: 150rem;
-          perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  margin-top: 10px;
+  -webkit-perspective: 180rem;
+          perspective: 180rem;
+  -moz-perspective: 180rem;
+  /*position: relative;*/
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  /*display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
   /*   perspective: 150rem;
     position: relative;
     margin-left: auto;
@@ -225,15 +219,16 @@ body {
   height: 500px;
   width: 300px;
   font-size: 15px;
-  color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  top: 30%;
+  left: -10%;
 }
 
 .card-side-front {
-  background-image: url("../media/Rbridge.jpg");
+  background-image: url("../media/City2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,22 +236,32 @@ body {
   position: absolute;
   top: 50%;
   z-index: 4;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.card-side-then {
+  background-image: url("../media/bonsai.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
 }
 
 .card-side-back {
   background-image: url("../media/fuji.jpg");
-  color: white;
   background-position: center;
   background-size: cover;
   position: absolute;
   top: 50%;
-  z-index: 0;
+  z-index: 1;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .card1:hover .card-side-front {
