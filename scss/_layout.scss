@@ -25,9 +25,8 @@
     font-size: 15px;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
-    top: 30%;
-    left: -10%;
-
+    left: 43%;
+    top: 35rem;
 }
 
 .card-side-front {
@@ -37,7 +36,6 @@
     background-size: cover;
     height: 500px;
     position: absolute;
-    top: 50%;
     z-index: 4;
     transition: all 1s;
 
@@ -50,31 +48,31 @@
     background-size: cover;
     height: 500px;
     position: absolute;
-    top: 50%;
     z-index: 2;
     transition: all 1s;
+    visibility: hidden;
 }
-/*
+
 .card-side-next {
-    background-image: url("../media/bonsai");
+    background-image: url("../media/tokyo.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 500px;
     position: absolute;
-    top: 50%;
     z-index: 3;
     transition: all 1s;
-}*/
+    visibility: hidden;
+}
 .card-side-back {
     background-image: url("../media/fuji.jpg");
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 50%;
     z-index: 1;
     transform: rotateY(-180deg);
     transition: all 1s;
+
 
 }
 
@@ -86,4 +84,24 @@
 .card1:hover .card-side-back {
     transform: rotateY(0deg);
     cursor: pointer; 
+}
+
+.card1:active .card-side-front {
+    left: 90%;
+}
+
+.card1:active .card-side-then {
+    visibility: visible;
+    left: 70%;
+
+}
+
+.card1:active .card-side-next {
+    visibility: visible;
+    left: 50%;
+}
+
+.card1:active .card-side-back {
+    left: 30%;
+    backface-visibility: visible;
 }
