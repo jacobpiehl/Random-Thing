@@ -28,49 +28,8 @@
     justify-content: space-around;
     align-items: flex-start;
     color: lightblue;
-    font-size: 5vw;
+    font-size: 10vw;
     font-family: 'Zhi Mang Xing', cursive;
-    text-shadow: 3px 3px rgb(24, 23, 23);
-    @include tablet {
-        font-size: 5vw;
-    }
-    @include laptop {
-        font-size: 19vw;
-    }
-    @include phone {
-        font-size: 1rem;
-    }
-    @include desktop {
-        font-size: 5vw;
-    }
-}
-
-.heading:hover {
-    animation-name: turn;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    color: rgb(255, 0, 0);
-}
-
-
-@keyframes turn {
-    0% {
-        transform: rotateY(0deg); 
-    } 
-
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
-.heading2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    color: lightblue;
-    font-size: 5vw;
-    font-family: 'Odibee Sans', ;
     text-shadow: 3px 3px rgb(24, 23, 23);
     @include tablet {
         font-size: 5vw;
@@ -86,6 +45,23 @@
     }
 }
 
-@import "_layout.scss";
+.heading:hover {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    color: blue;
+}
 
-@import "_food.scss";
+
+@keyframes turn {
+    0% {
+        transform: rotateY(0deg); 
+    } 
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@import "_layout.scss";

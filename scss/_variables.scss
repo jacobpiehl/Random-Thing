@@ -11,7 +11,7 @@ $colors: (
   primary-med: #3a8bdb,
   secondary-dark: #000c4e
 );
-$phone: 600px;
+$phone:600px;
 $tablet: 900px;
 $laptop: 1100px;
 $desktop: 1100px;
@@ -21,23 +21,23 @@ $desktop: 1100px;
 }
 
 @mixin tablet {
-  @media (max-width: #{$tablet}) {
+  @media (min-width: #{$tablet}) {
     @content;
   }
 }
 @mixin laptop {
-  @media (max-width: #{$laptop}) {
+  @media (min-width: #{$laptop}) {
     @content;
   }
 }
 @mixin desktop {
-  @media (max-width: #{$desktop}) {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
 
 @mixin phone {
-  @media (max-width: #{$phone}) {
+  @media (min-width: #{$phone}) {
     @content;
   }
   

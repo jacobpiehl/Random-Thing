@@ -2,8 +2,6 @@ html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  /*This is 10px */
-  /*10 px equals to 0.625rem*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -39,20 +37,6 @@ body {
   width: 100%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
-  background-size: cover;
-  background-position: center;
-  border: 15rem;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.second {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
-  background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
   background-size: cover;
   background-position: center;
   border: 15rem;
@@ -105,30 +89,30 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   color: lightblue;
-  font-size: 5vw;
+  font-size: 10vw;
   font-family: 'Zhi Mang Xing', cursive;
   text-shadow: 3px 3px #181717;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .heading {
     font-size: 5vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 1100px) {
   .heading {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .heading {
-    font-size: 1rem;
+    font-size: 1vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 1100px) {
   .heading {
     font-size: 5vw;
   }
@@ -141,7 +125,7 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  color: red;
+  color: blue;
 }
 
 @-webkit-keyframes turn {
@@ -166,55 +150,10 @@ body {
   }
 }
 
-.heading2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: lightblue;
-  font-size: 5vw;
-  font-family: "Odibee Sans";
-  text-shadow: 3px 3px #181717;
-}
-
-@media (max-width: 900px) {
-  .heading2 {
-    font-size: 5vw;
-  }
-}
-
-@media (max-width: 1100px) {
-  .heading2 {
-    font-size: 19vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .heading2 {
-    font-size: 1vw;
-  }
-}
-
-@media (max-width: 1100px) {
-  .heading2 {
-    font-size: 5vw;
-  }
-}
-
 html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  /*This is 10px */
-  /*10 px equals to 0.625rem*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -258,20 +197,6 @@ body {
   margin-right: auto;
 }
 
-.second {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
-  background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
-  background-size: cover;
-  background-position: center;
-  border: 15rem;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card1 {
   -webkit-perspective: 180rem;
           perspective: 180rem;
@@ -300,23 +225,11 @@ body {
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   left: 43%;
-  top: -30;
-}
-
-@media (max-width: 600px) {
-  .card-side {
-    top: 30rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .card-side {
-    top: 20rem;
-  }
+  top: 35rem;
 }
 
 .card-side-front {
-  background-image: url("../media/tokyo.jpg");
+  background-image: url("../media/City2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -325,22 +238,10 @@ body {
   z-index: 4;
   -webkit-transition: all 1s;
   transition: all 1s;
-  /*@include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
-  @inc;
-}
-
-@media (max-width: 600px) {
-  .card-side-front {
-    height: 13rem;
-    width: 5rem;
-  }
 }
 
 .card-side-then {
-  background-image: url("../media/rainbow-bridge.jpg");
+  background-image: url("../media/bonsai.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -350,21 +251,10 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   visibility: hidden;
-  /*@include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
-}
-
-@media (max-width: 600px) {
-  .card-side-then {
-    height: 13rem;
-    width: 5rem;
-  }
 }
 
 .card-side-next {
-  background-image: url("../media/temple.jpg");
+  background-image: url("../media/tokyo.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -374,17 +264,6 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   visibility: hidden;
-  /*@include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
-}
-
-@media (max-width: 600px) {
-  .card-side-next {
-    height: 13rem;
-    width: 5rem;
-  }
 }
 
 .card-side-back {
@@ -397,27 +276,6 @@ body {
           transform: rotateY(-180deg);
   -webkit-transition: all 1s;
   transition: all 1s;
-  /* @include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
-}
-
-@media (max-width: 600px) {
-  .card-side-back {
-    height: 13rem;
-    width: 5rem;
-  }
-}
-
-.culture {
-  font-family: "ZCOOL QingKe HuangYou";
-  background-color: #0c0000;
-  color: #0084ff;
-  font-size: 2rem;
-  font-weight: 700;
-  position: absolute;
-  top: 90%;
 }
 
 .card1:hover .card-side-front {
@@ -433,16 +291,12 @@ body {
 }
 
 .card1:active .card-side-front {
-  left: 10%;
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
+  left: 90%;
 }
 
 .card1:active .card-side-then {
   visibility: visible;
-  left: 30%;
+  left: 70%;
 }
 
 .card1:active .card-side-next {
@@ -451,245 +305,8 @@ body {
 }
 
 .card1:active .card-side-back {
-  left: 70%;
+  left: 30%;
   -webkit-backface-visibility: visible;
           backface-visibility: visible;
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-
-.button {
-  font-size: 3rem;
-  position: absolute;
-  left: 40%;
-  top: 87%;
-  color: aqua;
-  background-color: blue;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .button {
-    font-size: 1rem;
-    left: 30%;
-    top: 70%;
-  }
-}
-
-@media (max-width: 900px) {
-  .button {
-    left: 30%;
-    top: 55%;
-  }
-}
-
-/*
-.button:hover .card-side-front{
-    left: 10%;
-    backface-visibility: visible;
-    transform: rotateY(360deg);
-}
-
-.button:hover .card-side-then{
-    visibility: visible;
-    left: 30%;
-}
-
-.button:hover .card-side-next{
-    visibility: visible;
-    left: 50%;
-}
-
-.button:hover .card-side-back{
-    left: 70%;
-    backface-visibility: visible;
-    transform: rotateY(360deg);
-}
-*/
-.foodtro {
-  margin: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.food-description {
-  color: lightblue;
-  font-family: "ZCOOL QingKe HuangYou";
-  text-shadow: 3px 3px #181717;
-  font-size: 4vw;
-}
-
-@media (max-width: 900px) {
-  .food-description {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 1100px) {
-  .food-description {
-    font-size: 19vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .food-description {
-    font-size: 1vw;
-  }
-}
-
-@media (max-width: 1100px) {
-  .food-description {
-    font-size: 5vw;
-  }
-}
-
-.iframe {
-  height: 30rem;
-  width: 150rem;
-  margin-top: 4rem;
-}
-
-@media (max-width: 600px) {
-  .iframe {
-    height: 20rem;
-    width: 15rem;
-  }
-}
-
-.food {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  top: 20%;
-}
-
-.items {
-  height: 20rem;
-  width: 30rem;
-}
-
-@media (max-width: 900px) {
-  .items {
-    height: 8rem;
-    width: 10rem;
-  }
-}
-
-.items-sushi {
-  background-image: url(../media/sushi.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.items-soba {
-  background-image: url(../media/soba.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.items-takoyaki {
-  background-image: url(../media/takoyaki.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-
-.items:hover {
-  -webkit-animation-name: nausea;
-          animation-name: nausea;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.food:hover .items:not(:hover) {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  opacity: 0.5;
-}
-
-@-webkit-keyframes nausea {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  25% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  50% {
-    -webkit-transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-            transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-  }
-  75% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-}
-
-@keyframes nausea {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  25% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  50% {
-    -webkit-transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-            transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-  }
-  75% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-}
-
-@-webkit-keyframes support {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0.5;
-  }
-}
-
-@keyframes support {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0.5;
-  }
 }
 /*# sourceMappingURL=style.css.map */
