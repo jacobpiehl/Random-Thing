@@ -19,6 +19,7 @@
     */
 }
 
+
 .card-side {
     height: 500px;
     width: 300px;
@@ -26,11 +27,19 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
     left: 43%;
-    top: 35rem;
+    top: -30;
+    @include phone {
+        top: 30rem;
+    }
+    @include tablet {
+        top: 20rem
+    }
+
+
 }
 
 .card-side-front {
-    background-image: url("../media/City2.jpeg");
+    background-image: url("../media/tokyo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -38,11 +47,19 @@
     position: absolute;
     z-index: 4;
     transition: all 1s;
-
+    @include phone {
+        height: 13rem;
+        width: 5rem
+    }
+    /*@include tablet {
+        height: 26rem;
+        width: 10rem;
+    }*/
+    @inc
 }
 
 .card-side-then {
-    background-image: url("../media/bonsai.jpg");
+    background-image: url("../media/rainbow-bridge.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,10 +68,18 @@
     z-index: 2;
     transition: all 1s;
     visibility: hidden;
+    @include phone {
+        height: 13rem;
+        width: 5rem
+    }
+    /*@include tablet {
+        height: 26rem;
+        width: 10rem;
+    }*/
 }
 
 .card-side-next {
-    background-image: url("../media/tokyo.gif");
+    background-image: url("../media/temple.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,6 +88,14 @@
     z-index: 3;
     transition: all 1s;
     visibility: hidden;
+    @include phone {
+        height: 13rem;
+        width: 5rem
+    }
+    /*@include tablet {
+        height: 26rem;
+        width: 10rem;
+    }*/
 }
 .card-side-back {
     background-image: url("../media/fuji.jpg");
@@ -72,9 +105,28 @@
     z-index: 1;
     transform: rotateY(-180deg);
     transition: all 1s;
-
+    @include phone {
+        height: 13rem;
+        width: 5rem
+    }
+   /* @include tablet {
+        height: 26rem;
+        width: 10rem;
+    }*/
 
 }
+
+
+.culture {
+    font-family: 'ZCOOL QingKe HuangYou', ;
+    background-color: rgb(12, 0, 0);
+    color: rgb(0, 132, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 90%;
+}
+
 
 .card1:hover .card-side-front {
     transform: rotateY(-180deg);
@@ -87,12 +139,14 @@
 }
 
 .card1:active .card-side-front {
-    left: 90%;
+    left: 10%;
+    backface-visibility: visible;
+    transform: rotateY(360deg);
 }
 
 .card1:active .card-side-then {
     visibility: visible;
-    left: 70%;
+    left: 30%;
 
 }
 
@@ -102,6 +156,50 @@
 }
 
 .card1:active .card-side-back {
-    left: 30%;
+    left: 70%;
     backface-visibility: visible;
+    transform: rotateY(360deg);
 }
+
+.button {
+    font-size: 3rem;
+    position: absolute;
+    left: 40%;
+    top: 87%;
+    color: aqua;
+    background-color: blue;
+    cursor: pointer;
+    @include phone {
+        font-size: 1rem;
+        left: 30%;
+        top: 70%;
+    }
+    @include tablet {
+        left: 30%;
+        top: 55%;
+    }
+}
+
+/*
+.button:hover .card-side-front{
+    left: 10%;
+    backface-visibility: visible;
+    transform: rotateY(360deg);
+}
+
+.button:hover .card-side-then{
+    visibility: visible;
+    left: 30%;
+}
+
+.button:hover .card-side-next{
+    visibility: visible;
+    left: 50%;
+}
+
+.button:hover .card-side-back{
+    left: 70%;
+    backface-visibility: visible;
+    transform: rotateY(360deg);
+}
+*/

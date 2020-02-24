@@ -1,7 +1,8 @@
 html {
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
+    font-size: 62.5%; /*This is 10px */
+    /*10 px equals to 0.625rem*/
     box-sizing: border-box;
     
 }
@@ -49,4 +50,22 @@ body {
     margin-right: auto;
     
     
+}
+
+.second {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(143, 0, 226, 0.26),
+        rgba(44, 0, 238, 0.301)
+    ),
+    url(../media/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 15rem;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
