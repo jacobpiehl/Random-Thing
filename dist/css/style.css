@@ -24,6 +24,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
   background-size: cover;
@@ -112,7 +113,7 @@ body {
 
 @media (max-width: 900px) {
   .heading {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 }
 
@@ -235,6 +236,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
   background-size: cover;
@@ -462,8 +464,9 @@ body {
   position: absolute;
   left: 40%;
   top: 87%;
-  color: aqua;
-  background-color: blue;
+  color: #008cff;
+  font-weight: bold;
+  background-color: black;
   cursor: pointer;
 }
 
@@ -608,62 +611,18 @@ body {
 }
 
 .items:hover {
-  -webkit-animation-name: nausea;
-          animation-name: nausea;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-transform: scale(1.4) rotateY(360deg);
+          transform: scale(1.4) rotateY(360deg);
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 
 .food:hover .items:not(:hover) {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0.5;
-}
-
-@-webkit-keyframes nausea {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  25% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  50% {
-    -webkit-transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-            transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-  }
-  75% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-}
-
-@keyframes nausea {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
-  25% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  50% {
-    -webkit-transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-            transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-  }
-  75% {
-    -webkit-transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-            transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-            transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-  }
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 @-webkit-keyframes support {
@@ -690,5 +649,11 @@ body {
             transform: scale(0.5);
     opacity: 0.5;
   }
+}
+
+.video {
+  height: 100vh;
+  width: 100%;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

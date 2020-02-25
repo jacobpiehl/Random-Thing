@@ -73,37 +73,15 @@
 
 
 .items:hover {
-    animation-name: nausea;
-    animation-duration: 2s;
+    transform: scale(1.4) rotateY(360deg);
+    transition-duration: 1.5s;
 }
 
 .food:hover .items:not(:hover) {
     transform: scale(0.8);
     opacity: 0.5;
+    transition-duration: 1s;
 
-}
-
-
-@keyframes nausea {
-    0% {
-        transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-    } 
-
-    25% {
-        transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-    }
-
-    50% {
-        transform: scale(1.4) rotateZ(-360deg) skew(-12deg, -12deg);
-    }
-
-    75% {
-        transform: scale(1.25) rotateZ(25deg) skew(9deg, 9deg);
-    }
-
-    100% {
-        transform: scale(1) rotateZ(0deg) skew(0deg, 0deg);
-    }
 }
 
 @keyframes support {

@@ -166,8 +166,9 @@
     position: absolute;
     left: 40%;
     top: 87%;
-    color: aqua;
-    background-color: blue;
+    color: rgb(0, 140, 255);
+    font-weight: bold;
+    background-color: black;
     cursor: pointer;
     @include phone {
         font-size: 1rem;
