@@ -23,7 +23,7 @@ body {
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
@@ -36,7 +36,7 @@ body {
 
 .first {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
@@ -46,11 +46,13 @@ body {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
 }
 
 .second {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
   background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
@@ -111,25 +113,25 @@ body {
   text-shadow: 3px 3px #181717;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .heading {
     font-size: 8vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .heading {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .heading {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .heading {
     font-size: 5vw;
   }
@@ -186,25 +188,25 @@ body {
   text-shadow: 3px 3px #181717;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .heading2 {
     font-size: 5vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .heading2 {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .heading2 {
     font-size: 1vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .heading2 {
     font-size: 5vw;
   }
@@ -235,7 +237,7 @@ body {
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
@@ -248,7 +250,7 @@ body {
 
 .first {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
@@ -258,11 +260,13 @@ body {
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
 }
 
 .second {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
   background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
@@ -302,16 +306,16 @@ body {
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   left: 43%;
-  top: -30;
+  top: 40%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .card-side {
     top: 30rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .card-side {
     top: 20rem;
   }
@@ -333,7 +337,7 @@ body {
     }*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .card-side-front {
     height: 13rem;
     width: 5rem;
@@ -357,7 +361,7 @@ body {
     }*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .card-side-then {
     height: 13rem;
     width: 5rem;
@@ -381,7 +385,7 @@ body {
     }*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .card-side-next {
     height: 13rem;
     width: 5rem;
@@ -404,7 +408,7 @@ body {
     }*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .card-side-back {
     height: 13rem;
     width: 5rem;
@@ -461,16 +465,17 @@ body {
 
 .button {
   font-size: 3rem;
-  position: absolute;
+  width: 50rem;
+  position: relative;
+  top: 50%;
   left: 40%;
-  top: 87%;
   color: #008cff;
   font-weight: bold;
   background-color: black;
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .button {
     font-size: 1rem;
     left: 30%;
@@ -478,7 +483,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .button {
     left: 30%;
     top: 55%;
@@ -533,25 +538,25 @@ body {
   font-size: 4vw;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .food-description {
     font-size: 3vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .food-description {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .food-description {
     font-size: 1vw;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .food-description {
     font-size: 5vw;
   }
@@ -563,7 +568,7 @@ body {
   margin-top: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   .iframe {
     height: 20rem;
     width: 15rem;
@@ -585,7 +590,7 @@ body {
   width: 30rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .items {
     height: 8rem;
     width: 10rem;

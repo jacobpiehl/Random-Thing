@@ -11,10 +11,10 @@ $colors: (
   primary-med: #3a8bdb,
   secondary-dark: #000c4e
 );
-$phone: 600px;
-$tablet: 900px;
-$laptop: 1100px;
-$desktop: 1100px;
+$phone: 300px;
+$tablet: 768px;
+$laptop: 1000px;
+$desktop: 1200px;
  
 @function color($color-name) {
   @return map-get($colors, $color-name);

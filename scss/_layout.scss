@@ -27,7 +27,7 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
     left: 43%;
-    top: -30;
+    top: 40%;
     @include phone {
         top: 30rem;
     }
@@ -163,9 +163,10 @@
 
 .button {
     font-size: 3rem;
-    position: absolute;
+    width: 50rem;
+    position: relative;
+    top: 50%;
     left: 40%;
-    top: 87%;
     color: rgb(0, 140, 255);
     font-weight: bold;
     background-color: black;

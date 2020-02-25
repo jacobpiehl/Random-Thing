@@ -19,7 +19,7 @@ body {
 
 .header {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
@@ -35,7 +35,7 @@ body {
 
 .first {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-image: linear-gradient(
         to left bottom,
@@ -49,13 +49,14 @@ body {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
     
     
 }
 
 .second {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
