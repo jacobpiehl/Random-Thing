@@ -177,11 +177,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  top: 20%;
   color: lightblue;
   font-size: 5vw;
   font-family: "Odibee Sans";
@@ -305,8 +301,6 @@ body {
           backface-visibility: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  left: 43%;
-  top: 40%;
 }
 
 @media (max-width: 300px) {
@@ -331,6 +325,8 @@ body {
   z-index: 4;
   -webkit-transition: all 1s;
   transition: all 1s;
+  left: 43%;
+  top: 70rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -355,6 +351,8 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   visibility: hidden;
+  left: 43%;
+  top: 70rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -379,6 +377,8 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   visibility: hidden;
+  left: 43%;
+  top: 70rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -402,6 +402,8 @@ body {
           transform: rotateY(-180deg);
   -webkit-transition: all 1s;
   transition: all 1s;
+  left: 43%;
+  top: 70rem;
   /* @include tablet {
         height: 26rem;
         width: 10rem;
@@ -467,11 +469,11 @@ body {
   font-size: 3rem;
   width: 50rem;
   position: relative;
-  top: 50%;
+  top: 85%;
   left: 40%;
-  color: #008cff;
+  color: #ffacc5;
   font-weight: bold;
-  background-color: black;
+  background-color: rgba(0, 132, 255, 0.034);
   cursor: pointer;
 }
 
