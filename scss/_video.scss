@@ -8,21 +8,19 @@
 }
 
 .viddescription {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: (rgb(0, 0, 0));
+    position: absolute;
+    color: (rgb(255, 0, 0));
     font-family: 'Trade Winds', ;
-    background-color: rgb(53, 205, 255);
-    top: -125rem;
     margin: 54rem;
+    transform: translate(200%, -2150%) ;
 }
 
 .videohead {
     font-size: 2rem;
+    z-index: 2;
 }
 
 .viddescription:hover {
-    background-color: red;
+    background-color: rgb(129, 255, 234);
     transition-duration: 1s;   
 }
