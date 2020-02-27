@@ -8,6 +8,8 @@
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: center;
     /*display: flex;
     flex-direction: row;
     justify-content: space-around; */
@@ -21,7 +23,7 @@
 
 @mixin cardposition {
     left: 43%;
-    top: 70rem;
+    top: 18rem;
 }
 
 .card-side {
@@ -173,14 +175,16 @@
 }
 
 .button {
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
     width: 50rem;
     position: relative;
-    top: 85%;
-    left: 40%;
-    color: rgb(255, 172, 197);
-    font-weight: bold;
-    background-color: rgba(0, 132, 255, 0.034);
+    top: 65%;
+    left: 35%;
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+    text-shadow: 4rem 1rem 3rem rgb(0, 26, 255);
     cursor: pointer;
     @include phone {
         font-size: 1rem;

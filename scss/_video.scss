@@ -1,5 +1,28 @@
+.vidholder {
+    height: 50vh;
+}
+
 .video {
-    height: 100vh;
-    width: 100%;
-    margin-top: 5rem;
+    min-width: 100%;
+    transform: scaleY(0.35) translateY(-80rem);
+}
+
+.viddescription {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: (rgb(0, 0, 0));
+    font-family: 'Trade Winds', ;
+    background-color: rgb(53, 205, 255);
+    top: -125rem;
+    margin: 54rem;
+}
+
+.videohead {
+    font-size: 2rem;
+}
+
+.viddescription:hover {
+    background-color: red;
+    transition-duration: 1s;   
 }
