@@ -32,6 +32,34 @@ body {
   top: 1.2%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
           clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg) scale(0.2);
+            transform: rotateY(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) scale(1);
+            transform: rotateY(360deg) scale(1);
+  }
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg) scale(0.2);
+            transform: rotateY(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) scale(1);
+            transform: rotateY(360deg) scale(1);
+  }
 }
 
 .first {
@@ -43,7 +71,6 @@ body {
   background-size: cover;
   background-position: center;
   border: 15rem;
-  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
@@ -239,6 +266,23 @@ body {
   top: 1.2%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
           clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg) scale(0.2);
+            transform: rotateY(0deg) scale(0.2);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) scale(1);
+            transform: rotateY(360deg) scale(1);
+  }
 }
 
 .first {
@@ -250,7 +294,6 @@ body {
   background-size: cover;
   background-position: center;
   border: 15rem;
-  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
@@ -672,6 +715,7 @@ body {
 }
 
 .video {
+  min-height: 200rem;
   min-width: 100%;
   -webkit-transform: scaleY(0.35) translateY(-80rem);
           transform: scaleY(0.35) translateY(-80rem);
