@@ -23,7 +23,7 @@ body {
 
 .header {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
@@ -64,7 +64,7 @@ body {
 
 .first {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
@@ -79,7 +79,7 @@ body {
 
 .second {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
   background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
@@ -140,25 +140,25 @@ body {
   text-shadow: 3px 3px #181717;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .heading {
     font-size: 8vw;
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .heading {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .heading {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .heading {
     font-size: 5vw;
   }
@@ -208,27 +208,17 @@ body {
   text-shadow: 3px 3px #181717;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) {
   .heading2 {
-    font-size: 5vw;
+    -webkit-transform: translateY(6.5rem);
+            transform: translateY(6.5rem);
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1200px) {
   .heading2 {
-    font-size: 19vw;
-  }
-}
-
-@media (max-width: 300px) {
-  .heading2 {
-    font-size: 1vw;
-  }
-}
-
-@media (max-width: 1200px) {
-  .heading2 {
-    font-size: 5vw;
+    -webkit-transform: translateY(30rem);
+            transform: translateY(30rem);
   }
 }
 
@@ -257,7 +247,7 @@ body {
 
 .header {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/city.gif);
   background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/city.gif);
@@ -287,7 +277,7 @@ body {
 
 .first {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/combination.jpeg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/combination.jpeg);
@@ -302,7 +292,7 @@ body {
 
 .second {
   position: relative;
-  height: 120vh;
+  height: 75vw;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(143, 0, 226, 0.26)), to(rgba(44, 0, 238, 0.301))), url(../media/restaurant.jpg);
   background-image: linear-gradient(to right bottom, rgba(143, 0, 226, 0.26), rgba(44, 0, 238, 0.301)), url(../media/restaurant.jpg);
@@ -340,8 +330,8 @@ body {
 }
 
 .card-side {
-  height: 500px;
-  width: 300px;
+  height: 25vw;
+  width: 15vw;
   font-size: 15px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -349,15 +339,10 @@ body {
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .card-side {
-    top: 30rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-side {
-    top: 20rem;
+    -webkit-transform: translateY(-25rem);
+            transform: translateY(-25rem);
   }
 }
 
@@ -366,7 +351,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
   position: absolute;
   z-index: 4;
   -webkit-transition: all 1s;
@@ -379,19 +363,11 @@ body {
     }*/
 }
 
-@media (max-width: 300px) {
-  .card-side-front {
-    height: 13rem;
-    width: 5rem;
-  }
-}
-
 .card-side-then {
   background-image: url("../media/rainbow-bridge.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
   position: absolute;
   z-index: 2;
   -webkit-transition: all 1s;
@@ -405,19 +381,11 @@ body {
     }*/
 }
 
-@media (max-width: 300px) {
-  .card-side-then {
-    height: 13rem;
-    width: 5rem;
-  }
-}
-
 .card-side-next {
   background-image: url("../media/temple.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 500px;
   position: absolute;
   z-index: 3;
   -webkit-transition: all 1s;
@@ -429,13 +397,6 @@ body {
         height: 26rem;
         width: 10rem;
     }*/
-}
-
-@media (max-width: 300px) {
-  .card-side-next {
-    height: 13rem;
-    width: 5rem;
-  }
 }
 
 .card-side-back {
@@ -454,13 +415,6 @@ body {
         height: 26rem;
         width: 10rem;
     }*/
-}
-
-@media (max-width: 300px) {
-  .card-side-back {
-    height: 13rem;
-    width: 5rem;
-  }
 }
 
 .culture {
@@ -529,7 +483,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .button {
     font-size: 1rem;
     left: 30%;
@@ -537,7 +491,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .button {
     left: 30%;
     top: 55%;
@@ -592,25 +546,25 @@ body {
   font-size: 4vw;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .food-description {
     font-size: 3vw;
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .food-description {
     font-size: 19vw;
   }
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .food-description {
     font-size: 1vw;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .food-description {
     font-size: 5vw;
   }
@@ -622,7 +576,7 @@ body {
   margin-top: 4rem;
 }
 
-@media (max-width: 300px) {
+@media (min-width: 300px) {
   .iframe {
     height: 20rem;
     width: 15rem;
@@ -644,7 +598,7 @@ body {
   width: 30rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .items {
     height: 8rem;
     width: 10rem;

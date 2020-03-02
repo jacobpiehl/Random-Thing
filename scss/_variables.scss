@@ -21,23 +21,23 @@ $desktop: 1200px;
 }
 
 @mixin tablet {
-  @media (max-width: #{$tablet}) {
+  @media (min-width: #{$tablet}) {
     @content;
   }
 }
 @mixin laptop {
-  @media (max-width: #{$laptop}) {
+  @media (min-width: #{$laptop}) {
     @content;
   }
 }
 @mixin desktop {
-  @media (max-width: #{$desktop}) {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
 
 @mixin phone {
-  @media (max-width: #{$phone}) {
+  @media (min-width: #{$phone}) {
     @content;
   }
   

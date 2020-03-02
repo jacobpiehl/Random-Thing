@@ -72,17 +72,12 @@
     font-size: 4.3vw;
     font-family: 'Odibee Sans', ;
     text-shadow: 3px 3px rgb(24, 23, 23);
-    @include tablet {
-        font-size: 5vw;
-    }
-    @include laptop {
-        font-size: 19vw;
-    }
     @include phone {
-        font-size: 1vw;
+        transform: translateY(6.5rem);
+
     }
     @include desktop {
-        font-size: 5vw;
+        transform: translateY(30rem);
     }
 }
 

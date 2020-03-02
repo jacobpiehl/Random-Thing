@@ -27,19 +27,14 @@
 }
 
 .card-side {
-    height: 500px;
-    width: 300px;
+    height: 25vw;
+    width: 15vw;
     font-size: 15px;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
-
     @include phone {
-        top: 30rem;
+        transform: translateY(-25rem);
     }
-    @include tablet {
-        top: 20rem
-    }
-
 
 }
 
@@ -48,16 +43,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
     position: absolute;
     z-index: 4;
     transition: all 1s;
     @include cardposition;
 
-    @include phone {
-        height: 13rem;
-        width: 5rem
-    }
     /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -70,17 +60,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
     position: absolute;
     z-index: 2;
     transition: all 1s;
     visibility: hidden;
     @include cardposition;
 
-    @include phone {
-        height: 13rem;
-        width: 5rem
-    }
     /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -92,17 +77,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
     position: absolute;
     z-index: 3;
     transition: all 1s;
     visibility: hidden;
     @include cardposition;
 
-    @include phone {
-        height: 13rem;
-        width: 5rem
-    }
     /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -118,10 +98,6 @@
     transition: all 1s;
     @include cardposition;
 
-    @include phone {
-        height: 13rem;
-        width: 5rem
-    }
    /* @include tablet {
         height: 26rem;
         width: 10rem;
