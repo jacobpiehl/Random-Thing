@@ -35,7 +35,9 @@
     @include phone {
         transform: translateY(-25rem);
     }
-
+    @include desktop {
+        transform: translateY(0);
+    }
 }
 
 .card-side-front {

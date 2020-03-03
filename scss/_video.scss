@@ -1,11 +1,15 @@
 .vidholder {
     height: 50vh;
+
 }
 
 .video {
-    min-height: 200rem;
-    min-width: 100%;
+    min-height: 200vw;
+    width: 50%;
     transform: scaleY(0.35) translateY(-80rem);
+    background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(13, 3, 145), rgb(83, 2, 121), black);
+    background-size: cover;
+
 }
 
 .viddescription {
@@ -13,11 +17,11 @@
     color: (rgb(255, 0, 0));
     font-family: 'Trade Winds', ;
     margin: 54rem;
-    transform: translate(200%, -2150%) ;
+    transform: translate(200%, -2850%) ;
 }
 
 .videohead {
-    font-size: 2rem;
+    font-size: 2vw;
     z-index: 2;
 }
 
