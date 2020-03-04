@@ -646,15 +646,11 @@ body {
   }
 }
 
-.vidholder {
-  height: 50vh;
-}
-
 .video {
   min-height: 200vw;
-  width: 50%;
-  -webkit-transform: scaleY(0.35) translateY(-80rem);
-          transform: scaleY(0.35) translateY(-80rem);
+  width: 100%;
+  -webkit-transform: scaleY(0.45) translateY(-80rem);
+          transform: scaleY(0.45) translateY(-80rem);
   background-image: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(#0d0391), color-stop(#530279), to(black));
   background-image: linear-gradient(to right top, black, #0d0391, #530279, black);
   background-size: cover;

@@ -1,12 +1,7 @@
-.vidholder {
-    height: 50vh;
-
-}
-
 .video {
     min-height: 200vw;
-    width: 50%;
-    transform: scaleY(0.35) translateY(-80rem);
+    width: 100%;
+    transform: scaleY(0.45) translateY(-80rem);
     background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(13, 3, 145), rgb(83, 2, 121), black);
     background-size: cover;
 
