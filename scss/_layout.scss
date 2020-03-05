@@ -35,10 +35,13 @@
     @include phone {
         transform: translateY(-25rem);
     }
-    @include desktop {
-        transform: translateY(0);
+    @include tablet {
+        transform: translateY(-17rem);
     }
-}
+    @include desktop {
+        transform: translateY(10%); /*Order matters!!!!!!*/
+    }
+} 
 
 .card-side-front {
     background-image: url("../media/tokyo.jpg");
@@ -122,17 +125,36 @@
 .card1:hover .card-side-front {
     transform: rotateY(-180deg);
     cursor: pointer;
-}
+    }
+
 
 .card1:hover .card-side-back {
     transform: rotateY(0deg);
     cursor: pointer; 
+    @include phone {
+        transform: translateY(-270%);
+    }
+    @include tablet {
+        transform: translateY(-89%);
+    }
+    @include desktop {
+        transform: translateY(10%);
+    }
 }
 
 .card1:active .card-side-front {
     left: 10%;
     backface-visibility: visible;
     transform: rotateY(360deg);
+    @include phone {
+        transform: rotateY(0deg) translateY(-250%);
+    }
+    @include tablet {
+        transform: translateY(-89%);
+    }
+    @include desktop {
+        transform: rotateY(360deg) translateY(10%);
+    }
 }
 
 .card1:active .card-side-then {
@@ -149,10 +171,18 @@
 .card1:active .card-side-back {
     left: 70%;
     backface-visibility: visible;
-    transform: rotateY(360deg);
+    @include phone {
+        transform: rotateY(0deg) translateY(-250%);
+    }
+    @include tablet {
+        transform: translateY(-89%);
+    }
+    @include desktop {
+        transform: rotateY(360deg) translateY(10%);
+    }
 }
 
-.button {
+/*.button {
     display: flex;
     justify-content: center;
     font-size: 3rem;

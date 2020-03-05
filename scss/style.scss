@@ -31,18 +31,6 @@
     font-size: 5vw;
     font-family: 'Zhi Mang Xing', cursive;
     text-shadow: 3px 3px rgb(24, 23, 23);
-    @include tablet {
-        font-size: 8vw;
-    }
-    @include laptop {
-        font-size: 19vw;
-    }
-    @include phone {
-        font-size: 1rem;
-    }
-    @include desktop {
-        font-size: 5vw;
-    }
 }
 
 .heading:hover {
@@ -63,6 +51,38 @@
     }
 }
 
+.entrance {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    width: 30vw;
+    left: 35%;
+}
+
+
+
+.gate {
+    height: 30vw;
+    width: 10vw;
+}
+
+.entrance:hover .gate-first{
+    transform: translateX(-10vw);
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    filter: contrast(2);
+}
+
+.entrance:hover .gate-last{
+    transform: translateX(10vw);
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    filter: contrast(2);
+}
+
+
+
 .heading2 {
     /*display: flex;
     flex-direction: column;
@@ -75,12 +95,21 @@
         transform: translateY(6.5rem);
 
     }
+    @include tablet {
+        transform: translateY(12rem);
+    }
+
     @include desktop {
         transform: translateY(35rem);
     }
 }
 
-
+.heading2:hover{
+    text-shadow: 5px 5px rgb(24, 23, 23);
+    color: rgb(255, 81, 0);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
 
 @import "_layout.scss";
 

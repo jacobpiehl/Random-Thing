@@ -1,26 +1,45 @@
+.gradient {
+    min-height: 200vw;
+    width: 100%;
+    transform: scaleY(0.45) translateY(-300rem);
+}
+
 .video {
     min-height: 200vw;
     width: 100%;
-    transform: scaleY(0.45) translateY(-80rem);
-    background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(13, 3, 145), rgb(83, 2, 121), black);
+    @include desktop {
+        transform: translateY(-35%) scaleY(0.45);
+    }
+    @include phone {
+        transform: translateY(-35%) scaleY(0.45);
+    }
+}
+
+.vidbackground {
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(13, 3, 145, 0.8), rgba(0, 0, 0, 0.8), rgba(83, 2, 121, 0.8),);
     background-size: cover;
+    z-index: 1;
+    position: absolute;
+    transform: scaleY(0.13) translateY(-1040%);
 
 }
 
+
 .viddescription {
-    position: absolute;
     color: (rgb(255, 0, 0));
     font-family: 'Trade Winds', ;
-    margin: 54rem;
-    transform: translate(200%, -2850%) ;
+    text-align: center;
+    transform: scaleY(9) translateY(100%);
 }
 
 .videohead {
-    font-size: 2vw;
-    z-index: 2;
+    font-size: 6vw;
+    z-index: 5;
+
 }
 
 .viddescription:hover {
-    background-color: rgb(129, 255, 234);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(2, 162, 255, 0.863);
     transition-duration: 1s;   
 }

@@ -12,6 +12,10 @@
     font-family: 'ZCOOL QingKe HuangYou', ;
     text-shadow: 3px 3px rgb(24, 23, 23);
     @include phone {
+        font-size: 3vw;
+        left: -10%;
+    }
+    @include desktop {
         font-size: 3.5vw;
     }
 }
@@ -19,7 +23,7 @@
 .iframe {
     @include phone {
         height: 30vw;
-        width: 35vw;
+        width: 45vw;
     }
     @include desktop {
         height: 30vw;
@@ -31,14 +35,20 @@
     position: relative;
     display: flex;
     justify-content: space-around;
-    top: 20%;
+    @include phone {
+        top: 0%;
+    }
+    @include desktop {
+        top: 20%;
+    }
 
 }
 
 .items {
     @include phone {
-        height: 12vw;
+        height: 13vw;
         width: 16vw;
+        filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
     }
 }
 

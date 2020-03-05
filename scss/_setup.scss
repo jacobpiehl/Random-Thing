@@ -39,10 +39,10 @@ body {
 
 @keyframes woah {
     0% {
-        transform: rotateY(0deg) scale(0.2);
+        transform: rotateY(0deg) /*scale(0.2)*/;
     }
     100% {
-        transform: rotateY(360deg) scale(1);
+        transform: rotateY(360deg) /*scale(1)*/;
     }
 }
 
