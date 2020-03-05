@@ -20,6 +20,21 @@
     }
 }
 
+.ishader {
+    background-image: linear-gradient(to right top, rgba(72, 0, 167, 0.7), rgba(133, 0, 145, 0.7), rgba(0, 4, 255, 0.603),);
+    /*@include phone {
+        height: 30vw;
+        width: 45vw;
+    }*/
+    @include desktop {
+        height: 31vw;
+        width: 41vw;
+    }
+    z-index: 3;
+    position: absolute;
+    left: 57%;
+}
+
 .iframe {
     @include phone {
         height: 30vw;
