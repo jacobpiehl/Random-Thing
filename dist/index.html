@@ -17,15 +17,26 @@
     <title>Japan, An Experience of Wonder and Awe</title>
 </head>
 <body>
-    <!--<nav class="navigation">
-        <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#first">Culture</a></li>
-            <li><a href="#second">Food</a></li>
-            <li><a href="#last">Book Your Journey</a></li>
-        </ul>
-    </nav> -->
-    <header class="header">
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi_toggle">
+
+        <label for="navi_toggle" class="navigation_button">
+            <span class="navigation_icon">
+
+            </span>
+        </label>
+        <div class="navigation_background">&nbsp;</div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="#firstlink"></a></li>
+                <li class="navigation_item"><a href="#secondlink"></a></li>
+                <li class="navigation_item"><a href="#thirdlink"></a></li>
+                <li class="navigation_item"><a href="#fourthlink"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header" id="firstlink">
         <div class="text-group">
             <h1 class="heading">
                 The gates to Japan open up to <span class="possibility">fantastical experiences</span>
@@ -41,7 +52,7 @@
 
     </header>
     
-    <section class="first">
+    <section class="first" id="secondlink">
                 <h1 class="heading2">The unique culture of Japan spans from colorful cities to majestic mountains</h1>
             </div>
 
@@ -72,7 +83,7 @@
         </div>
     </section>
 
-    <section class="second">
+    <section class="second" id="thirdlink">
         <div class="foodtro">
             <h1 class="food-description">Food is one of Japan's best qualities. The options range from the iconic sushi rolls to the many types of noodles.</h1>
             <iframe class="iframe" src="https://www.tripadvisor.com/Restaurants-g294232-Japan.html"></iframe>
@@ -87,7 +98,7 @@
     </section>
 
 
-    <section class="last">
+    <section class="last" id="fourthlink">
 
     </section>
     <section class="vidholder">
@@ -97,7 +108,7 @@
         <div class="gradient vidbackground">
             <div class= "viddescription">
                 <h1 class="videohead">Book your Flight Today</h1>
-                <a href="https://us.jnto.go.jp/top/index.php"><button class="action">It's one click away.</button></a>
+                <a href="https://us.jnto.go.jp/top/index.php"><button type="button" class="action">It's one click away.</button></a>
             </div>
         </div>
     </section>
