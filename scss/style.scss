@@ -111,6 +111,8 @@
     transition-timing-function: ease;
 }
 
+@import "_navigation.scss";
+
 @import "_layout.scss";
 
 @import "_food.scss";
