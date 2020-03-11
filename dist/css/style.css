@@ -361,13 +361,13 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#2998ff, #28b485);
   z-index: 1000;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: tranform 0.8s;
+  transition: tranform 0.8s;
   -webkit-transform: scale(80);
           transform: scale(80);
 }
 
-.navigation_link .navigation_link:link, .navigation_link:visited {
+.navigation_link, .navigation_link:link, .navigation_link:visited {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -379,6 +379,23 @@ body {
   background-size: 240%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.navigation_link:hover, .navigation_link:active {
+  background-position: 100%;
+  color: #2998ff;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+
+.navigation_checkbox:checked ~ .navigation_background {
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+
+.navigation_checkbox:checked ~ .navigation_nav {
+  opacity: 1;
+  width: 100%;
 }
 
 html {

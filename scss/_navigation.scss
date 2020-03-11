@@ -103,11 +103,11 @@
         rgba(41, 152, 255, 1),
         rgba(40, 180, 133, 1)) ;
     z-index: 1000;
-    transition: all 0.8s;
+    transition: tranform 0.8s;
     transform: scale(80);
 }
 
-.navigation_link .navigation_link:link, .navigation_link:visited {
+.navigation_link, .navigation_link:link, .navigation_link:visited {
     display: inline-block;
     font-size: 3rem;
     font-weight: 300;
@@ -119,4 +119,19 @@
     background-size: 240%;
     transition: all 0.4s;
 
+}
+
+.navigation_link:hover, .navigation_link:active {
+    background-position: 100%;
+    color: rgba(41, 152, 255, 1);
+    transform: translateX(1rem);
+}
+
+.navigation_checkbox:checked~.navigation_background {
+    transform: scale(80);
+}
+
+.navigation_checkbox:checked~.navigation_nav {
+    opacity: 1;
+    width: 100%;
 }
