@@ -10,7 +10,7 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
-    z-index: 2000;
+    z-index: 2500;
     box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
     text-align: center;
     cursor: pointer;
@@ -21,35 +21,35 @@
     margin-top: 3.5rem;
 }
 
-.navigation_icon::before .navigation_icon::after{
+.navigation_icon::before, .navigation_icon::after{
     content: "";
 }
 
 .navigation_icon::before{
     position: absolute;
-    top: -0.8rem;
+    top: -.8rem;
     left: 0;
 }
 
 .navigation_icon::after{
     position: absolute;
-    top: 0.8rem;
+    top: .8rem;
     left: 0;
 }
 
-.navigation_icon .navigation_icon::before .navigation_icon::after {
+.navigation_icon, .navigation_icon::before, .navigation_icon::after {
     width: 3rem;
     height: 2px;
     background-color: #333;
     display: inline-block;
-    transition: all 0.2s;
+    transition: all .2s;
 }
 
-.navigation_button .navigation_icon::before {
+.navigation_button:hover .navigation_icon::before {
     top: -1rem;
 }
 
-.navigation_button .navigation_icon::after {
+.navigation_button:hover .navigation_icon::after {
     top: 1rem;
 }
 
@@ -87,7 +87,7 @@
     top: 0;
     left: 0;
     z-index: 1500;
-    /*opacity: 0%;*/
+    opacity: 0%;
     width: 100%;
     transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -103,8 +103,8 @@
         rgba(41, 152, 255, 1),
         rgba(40, 180, 133, 1)) ;
     z-index: 1000;
-    transition: tranform 0.8s;
-    transform: scale(80);
+    transition: transform .8s;
+    transform: scale(0);
 }
 
 .navigation_link, .navigation_link:link, .navigation_link:visited {
