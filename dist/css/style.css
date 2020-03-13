@@ -277,7 +277,7 @@ body {
 }
 
 .navigation_icon::before, .navigation_icon::after {
-  content: "";
+  content: '';
 }
 
 .navigation_icon::before {
@@ -331,22 +331,15 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
   width: 100%;
 }
 
-.navigation_item {
-  margin: 1rem;
-}
-
 .navigation_nav {
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1500;
-  opacity: 0%;
+  display: none;
   width: 100%;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -391,13 +384,38 @@ body {
 }
 
 .navigation_checkbox:checked ~ .navigation_background {
-  -webkit-transform: scale(80);
-          transform: scale(80);
+  border-radius: 0;
+  -webkit-transform: scaleX(80) scaleY(1) translateY(-5rem);
+          transform: scaleX(80) scaleY(1) translateY(-5rem);
 }
 
 .navigation_checkbox:checked ~ .navigation_nav {
-  opacity: 1;
+  display: inline-block;
+  -webkit-animation-name: fade_in;
+          animation-name: fade_in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
   width: 100%;
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 html {
