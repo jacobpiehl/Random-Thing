@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: color(dark);
+    background-color: rgb(14, 28, 53);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -19,14 +19,14 @@ body {
 
 .header {
     position: relative;
-    height: 75vw;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
         rgba(color(primary-dark), 0.3),
         rgba(color(primary-light), 0.4)
     ),
-    url(../media/city.gif);
+    url(../media/Overpass.jpg);
     background-size: cover;
     background-position: center;
     top: 1.2%;
@@ -34,6 +34,8 @@ body {
     animation-name: woah;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    background-attachment: fixed;
+    
 
 }
 
@@ -49,27 +51,29 @@ body {
 
 .first {
     position: relative;
-    height: 75vw;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(
         to left bottom,
         rgba(20, 1, 1, 0),
         rgba(0, 4, 219, 0.377)
     ),
-    url(../media/combination.jpeg);
+    url(../media/both.jpg);
     background-size: cover;
     background-position: center;
-    border: 15rem;
+    border: 20rem;
     margin-left: auto;
     margin-right: auto;
     clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+    background-attachment: fixed;
+    top: -15rem;
     
     
 }
 
 .second {
     position: relative;
-    height: 75vw;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
@@ -83,4 +87,6 @@ body {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    top: -15%;
+    background-attachment: fixed;
 }

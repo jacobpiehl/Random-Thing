@@ -1,5 +1,20 @@
 @import "_variables.scss" ;
 @import "_setup.scss";
+
+.overview_background {
+    width: 30vw;
+
+}
+
+.overview{
+    font-size: 1vw;
+    font-family: 'Patua One', cursive;
+    color: red;
+    background-color: whitesmoke;
+    border-radius: 1vw;
+    border-color: rgba(2, 0, 117, 0.753);
+}
+
 .card1 {
 
     perspective: 180rem;
@@ -22,13 +37,13 @@
 }
 
 @mixin cardposition {
-    left: 43%;
-    top: 30rem;
+    left: 46.5%;
+    top: 20rem;
 }
 
 .card-side {
-    height: 25vw;
-    width: 15vw;
+    height: 11vw;
+    width: 8vw;
     font-size: 15px;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
@@ -39,7 +54,7 @@
         transform: translateY(-17rem);
     }
     @include desktop {
-        transform: translateY(10%); /*Order matters!!!!!!*/
+        transform: translateY(8%) translateX(50%); /*Order matters!!!!!!*/
     }
 } 
 

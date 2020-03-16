@@ -3,7 +3,7 @@
 }
 
 .navigation_button {
-    background-color: white;
+    background-color: rgba(0, 204, 255, 0.705);
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
@@ -64,15 +64,28 @@
 .navigation_checkbox:checked + .navigation_button .navigation_icon::after {
     transform: rotate(-135deg);
     top: 0;
-
 }
 
+.navigation_link {
+    font-family: 'Acme', cursive;
+    border-style: groove;
+    border-width: 0.5rem;
+    border-color: whitesmoke;
+}
+
+
 .navigation_list {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation_item {
+    transform: translate(0%, -50%);
 }
 
 .navigation_nav {
@@ -86,18 +99,23 @@
 }
 
 .navigation_background {
-    height: 6rem;
+    height: 10rem;
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 4rem;
     right: 6.5rem;
     background-image: radial-gradient(
-        rgba(41, 152, 255, 1),
-        rgba(40, 180, 133, 1)) ;
+        rgba(8, 217, 245, 0.7),
+        rgba(0, 126, 148, 0.8),
+        rgba(0, 68, 80, 0.8));
     z-index: 1000;
     transition: transform .8s;
     transform: scale(0);
+    border-style: outset;
+    border-width: 1rem;
+    border-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .navigation_link, .navigation_link:link, .navigation_link:visited {
@@ -117,13 +135,13 @@
 .navigation_link:hover, .navigation_link:active {
     background-position: 100%;
     color: rgba(41, 152, 255, 1);
-    transform: translateX(1rem);
 }
 
 
 .navigation_checkbox:checked~.navigation_background {
+    transition-duration: 0.7s;
     border-radius: 0;
-    transform: scaleX(80) scaleY(1) translateY(-5rem);
+    transform: scaleX(80) scaleY(1) translateY(-4rem);
 
 }
 
@@ -133,7 +151,7 @@
 .navigation_checkbox:checked~.navigation_nav {
     display: inline-block;
     animation-name: fade_in;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-timing-function: ease-in;
     width: 100%;
 }
@@ -141,8 +159,10 @@
 @keyframes fade_in {
     0% {
         opacity: 0;
+        transform: scale(0.5);
     }
     100% {
         opacity: 1;
+        transform: scale(1);
     }
 }
