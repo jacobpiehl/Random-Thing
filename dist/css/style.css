@@ -602,16 +602,19 @@ body {
 }
 
 .overview_background {
-  width: 30vw;
+  width: 35vw;
 }
 
 .overview {
-  font-size: 1vw;
+  font-size: 2vw;
   font-family: 'Patua One', cursive;
-  color: red;
-  background-color: whitesmoke;
-  border-radius: 1vw;
+  color: #d6fffc;
+  background-color: rgba(13, 52, 75, 0.705);
+  border-style: outset;
+  border-width: 1vw;
   border-color: rgba(2, 0, 117, 0.753);
+  -webkit-transform: translate(10%, 40%);
+          transform: translate(10%, 40%);
 }
 
 .card1 {
@@ -665,8 +668,8 @@ body {
 
 @media (min-width: 1332px) {
   .card-side {
-    -webkit-transform: translateY(8%) translateX(50%);
-            transform: translateY(8%) translateX(50%);
+    -webkit-transform: translateY(-20%) translateX(50%);
+            transform: translateY(-20%) translateX(50%);
     /*Order matters!!!!!!*/
   }
 }
@@ -681,7 +684,6 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   left: 46.5%;
-  top: 20rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -699,7 +701,6 @@ body {
   transition: all 1s;
   visibility: hidden;
   left: 46.5%;
-  top: 20rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -717,7 +718,6 @@ body {
   transition: all 1s;
   visibility: hidden;
   left: 46.5%;
-  top: 20rem;
   /*@include tablet {
         height: 26rem;
         width: 10rem;
@@ -735,7 +735,6 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   left: 46.5%;
-  top: 20rem;
   /* @include tablet {
         height: 26rem;
         width: 10rem;
