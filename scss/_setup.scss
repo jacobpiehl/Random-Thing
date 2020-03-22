@@ -75,12 +75,8 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(143, 0, 226, 0.26),
-        rgba(44, 0, 238, 0.301)
-    ),
-    url(../media/restaurant.jpg);
+    background-image: 
+    url(../media/restaurant2.jpg);
     background-size: cover;
     background-position: center;
     border: 15rem;

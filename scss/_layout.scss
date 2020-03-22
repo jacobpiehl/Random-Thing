@@ -14,19 +14,20 @@
     border-style: outset;
     border-width: 1vw;
     border-color: rgba(2, 0, 117, 0.753);
-    transform: translate(10%, 40%);
+    transform: translate(10%, 30%);
 }
 
 .card1 {
 
     perspective: 180rem;
     -moz-perspective: 180rem;
-    /*position: relative;*/
+    position: absolute;
+    top: 35%;
+    left: 65%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: center;
+    transform: translateX(65%);
     /*display: flex;
     flex-direction: row;
     justify-content: space-around; */
@@ -36,6 +37,18 @@
     margin-right: auto;
     margin-top: 50px;
     */
+}
+
+.card2 {
+    perspective: 180rem;
+    -moz-perspective: 180rem;
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(65%);
 }
 
 @mixin cardposition {
@@ -48,15 +61,17 @@
     font-size: 15px;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
-    @include phone {
+    top: 10%;
+    
+    /*@include phone {
         transform: translateY(-25rem);
     }
     @include tablet {
         transform: translateY(-17rem);
-    }
-    @include desktop {
+    }*/
+    /*@include desktop {
         transform: translateY(-20%) translateX(50%); /*Order matters!!!!!!*/
-    }
+    /*}*/
 } 
 
 .card-side-front {
@@ -67,7 +82,7 @@
     position: absolute;
     z-index: 4;
     transition: all 1s;
-    @include cardposition;
+
 
     /*@include tablet {
         height: 26rem;
@@ -77,7 +92,7 @@
 }
 
 .card-side-then {
-    background-image: url("../media/rainbow-bridge.jpg");
+    background-image: url("../media/osaka.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -85,39 +100,21 @@
     z-index: 2;
     transition: all 1s;
     visibility: hidden;
-    @include cardposition;
 
-    /*@include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
 }
 
-.card-side-next {
-    background-image: url("../media/temple.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    z-index: 3;
-    transition: all 1s;
-    visibility: hidden;
-    @include cardposition;
 
-    /*@include tablet {
-        height: 26rem;
-        width: 10rem;
-    }*/
-}
+
 .card-side-back {
-    background-image: url("../media/fuji.jpg");
+    background-image: url("../media/yokohama.jpg");
     background-position: center;
     background-size: cover;
     position: absolute;
     z-index: 1;
     transform: rotateY(-180deg);
     transition: all 1s;
-    @include cardposition;
+
+    
 
    /* @include tablet {
         height: 26rem;
@@ -128,75 +125,51 @@
 
 
 .culture {
+
     font-family: 'ZCOOL QingKe HuangYou', ;
-    background-color: rgb(12, 0, 0);
-    color: rgb(0, 132, 255);
+    background-color: rgba(0, 0, 0, 0.438);
+    color: rgb(255, 0, 0);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 1000;
     position: absolute;
-    top: 90%;
+    top: 30%;
+    left: 40%;
+
 }
 
 
 .card1:hover .card-side-front {
     transform: rotateY(-180deg);
     cursor: pointer;
+    
     }
 
 
 .card1:hover .card-side-back {
     transform: rotateY(0deg);
     cursor: pointer; 
-    @include phone {
-        transform: translateY(-270%);
-    }
-    @include tablet {
-        transform: translateY(-89%);
-    }
-    @include desktop {
-        transform: translateY(10%);
-    }
 }
 
 .card1:active .card-side-front {
-    left: 10%;
     backface-visibility: visible;
     transform: rotateY(360deg);
-    @include phone {
-        transform: rotateY(0deg) translateY(-250%);
-    }
-    @include tablet {
-        transform: translateY(-89%);
-    }
-    @include desktop {
-        transform: rotateY(360deg) translateY(10%);
-    }
 }
 
 .card1:active .card-side-then {
     visibility: visible;
-    left: 30%;
+    transform: translateX(-150%);
 
-}
-
-.card1:active .card-side-next {
-    visibility: visible;
-    left: 50%;
 }
 
 .card1:active .card-side-back {
     left: 70%;
     backface-visibility: visible;
-    @include phone {
-        transform: rotateY(0deg) translateY(-250%);
-    }
-    @include tablet {
-        transform: translateY(-89%);
-    }
     @include desktop {
-        transform: rotateY(360deg) translateY(10%);
+        transform: translateX(150%)
     }
 }
+
+
 
 /*.button {
     display: flex;
@@ -244,3 +217,172 @@
     transform: rotateY(360deg);
 }
 */
+
+
+.card-side2-front {
+    background-image: url("../media/kyoto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 4;
+    transition: all 1s;
+}
+
+.card-side2-then {
+    background-image: url("../media/fuji.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transition: all 1s;
+    visibility: hidden;
+}
+
+.card-side2-back {
+    background-image: url("../media/kamakura.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+
+}
+
+.card2:hover .card-side2-front {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+    
+    }
+
+
+.card2:hover .card-side2-back {
+    transform: rotateY(0deg);
+    cursor: pointer; 
+}
+
+.card2:active .card-side2-front {
+    backface-visibility: visible;
+    transform: rotateY(360deg);
+}
+
+.card2:active .card-side2-then {
+    visibility: visible;
+    transform: translateX(-150%);
+
+}
+
+.card2:active .card-side2-back {
+    left: 70%;
+    backface-visibility: visible;
+    @include desktop {
+        transform: translateX(150%)
+    }
+}
+
+
+.button_checkbox {
+    display: none;
+}
+
+.button1 {
+    width: 10vw;
+    height: 5vw;
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(201, 158, 49);
+    background-color: rgba(0, 15, 102, 0.733);
+    border-style: outset;;
+    border-color: cyan;
+    border-width: 1vw;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    cursor: pointer;
+}
+
+.button1:hover {
+    transform: translateY(-10%);
+    filter: drop-shadow(4vw 4vw 4vw black);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    background-color: rgba(255, 0, 0, 0.589);
+
+}
+
+@mixin firstbuttonpart {
+    .card1:active .card-side-front {
+        backface-visibility: visible;
+        transform: rotateY(360deg);
+    }
+    
+    .card1:active .card-side-then {
+        visibility: visible;
+        transform: translateX(-150%);
+    
+    }
+    
+    .card1:active .card-side-back {
+        left: 70%;
+        backface-visibility: visible;
+        @include desktop {
+            transform: translateX(150%)
+        }
+    }
+    
+}
+
+
+
+
+.button_checkbox:checked~.card1 .card-side-front {
+    backface-visibility: visible;
+    transform: rotateY(360deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.button_checkbox:checked~.card2 .card-side2-front {
+    backface-visibility: visible;
+    transform: rotateY(360deg);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.button_checkbox:checked~.card1 .card-side-then {
+    visibility: visible;
+    transform: translateX(-150%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.button_checkbox:checked~.card2 .card-side2-then {
+    visibility: visible;
+    transform: translateX(-150%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.button_checkbox:checked~.card1 .card-side-back {
+    left: 70%;
+    backface-visibility: visible;
+    @include desktop {
+        transform: translateX(150%)
+    }
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.button_checkbox:checked~.card2 .card-side2-back {
+    left: 70%;
+    backface-visibility: visible;
+    @include desktop {
+        transform: translateX(150%)
+    }
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
