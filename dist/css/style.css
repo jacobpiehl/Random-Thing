@@ -19,6 +19,16 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -66,12 +76,13 @@ body {
 .first {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 97%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
   background-size: cover;
   background-position: center;
   border: 20rem;
+  margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
   -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
@@ -83,16 +94,33 @@ body {
 .second {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 95%;
   background-image: url(../media/restaurant2.jpg);
   background-size: cover;
   background-position: center;
   border: 15rem;
-  margin-top: auto;
+  margin-top: 1.5%;
   margin-left: auto;
   margin-right: auto;
   top: -15%;
   background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
 }
 
 @-webkit-keyframes first {
@@ -287,6 +315,8 @@ body {
   text-align: center;
   font-family: 'Acme', cursive;
   text-shadow: 3px 3px #181717;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 @media (min-width: 300px) {
@@ -317,6 +347,120 @@ body {
           transition-duration: 1s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /*This is 10px */
+  /*10 px equals to 0.625rem*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1c35;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/Overpass.jpg);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/Overpass.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  background-attachment: fixed;
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  width: 97%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 20rem;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+  background-attachment: fixed;
+  top: -15rem;
+}
+
+.second {
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  background-image: url(../media/restaurant2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15%;
+  background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
 }
 
 .navigation_checkbox {
@@ -534,6 +678,16 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -570,12 +724,13 @@ body {
 .first {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 97%;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
   background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
   background-size: cover;
   background-position: center;
   border: 20rem;
+  margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
   -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
@@ -587,16 +742,33 @@ body {
 .second {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 95%;
   background-image: url(../media/restaurant2.jpg);
   background-size: cover;
   background-position: center;
   border: 15rem;
-  margin-top: auto;
+  margin-top: 1.5%;
   margin-left: auto;
   margin-right: auto;
   top: -15%;
   background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
 }
 
 .overview_background {
@@ -620,7 +792,7 @@ body {
           perspective: 180rem;
   -moz-perspective: 180rem;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 65%;
   margin-top: auto;
   margin-left: auto;
@@ -992,6 +1164,120 @@ body {
   }
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /*This is 10px */
+  /*10 px equals to 0.625rem*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1c35;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/Overpass.jpg);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/Overpass.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  background-attachment: fixed;
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  width: 97%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 20rem;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+  background-attachment: fixed;
+  top: -15rem;
+}
+
+.second {
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  background-image: url(../media/restaurant2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15%;
+  background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+}
+
 .foodtro {
   position: relative;
   margin: 5rem;
@@ -1016,8 +1302,10 @@ body {
   font-family: 'Acme', cursive;
   text-shadow: 3px 3px #181717;
   text-align: center;
-  -webkit-transform: translate(550%, -30%);
-          transform: translate(550%, -30%);
+  -webkit-transform: translate(550%, -100%);
+          transform: translate(550%, -100%);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 @media (min-width: 1332px) {
@@ -1034,16 +1322,17 @@ body {
   color: #cffae9;
   font-family: 'Acme', cursive;
   background-color: rgba(0, 0, 0, 0.733);
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -70%);
+          transform: translate(50%, -70%);
 }
 
 .iframe {
   display: none;
+  z-index: 1500;
   position: fixed;
   left: 25%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -85%);
+          transform: translate(0%, -85%);
 }
 
 @media (min-width: 300px) {
@@ -1071,7 +1360,7 @@ body {
 
 @media (min-width: 300px) {
   .food {
-    top: -3%;
+    top: -15%;
   }
 }
 
@@ -1086,8 +1375,13 @@ body {
 
 @media (min-width: 300px) {
   .food2 {
-    top: -3%;
+    top: -10%;
   }
+}
+
+.items {
+  position: absolute;
+  top: -8rem;
 }
 
 @media (min-width: 300px) {
@@ -1147,8 +1441,8 @@ body {
 }
 
 .items:hover {
-  -webkit-transform: scale(1.17) rotateY(360deg);
-          transform: scale(1.17) rotateY(360deg);
+  -webkit-transform: scale(1.12) rotateY(360deg);
+          transform: scale(1.12) rotateY(360deg);
   -webkit-transition-duration: 1.5s;
           transition-duration: 1.5s;
 }
@@ -1183,7 +1477,7 @@ body {
   text-align: center;
   position: absolute;
   left: 40%;
-  top: 34%;
+  top: 40%;
   font-family: 'Acme', cursive;
   color: #cffae9;
   font-weight: bold;
@@ -1203,9 +1497,9 @@ body {
 .button2::before {
   border-bottom-width: 0.5vw;
   border-bottom-style: solid;
-  border-bottom-color: rgba(0, 11, 109, 0.85);
+  border-bottom-color: rgba(0, 204, 255, 0.85);
   border-left-width: 0.5vw;
-  border-left-color: rgba(0, 11, 109, 0.85);
+  border-left-color: rgba(0, 204, 255, 0.85);
   border-left-style: solid;
   width: 10%;
   height: 33%;
@@ -1215,10 +1509,10 @@ body {
 
 .button2::after {
   border-top-width: 0.5vw;
-  border-top-color: rgba(0, 11, 109, 0.85);
+  border-top-color: rgba(0, 204, 255, 0.85);
   border-top-style: solid;
   border-right-width: 0.5vw;
-  border-right-color: rgba(0, 11, 109, 0.85);
+  border-right-color: rgba(0, 204, 255, 0.85);
   border-right-style: solid;
   width: 10%;
   height: 33%;
@@ -1228,7 +1522,7 @@ body {
 
 .button2:hover::before, .button2:hover::after {
   width: 107.5%;
-  height: 125%;
+  height: 126%;
 }
 
 .button2_checkbox:checked ~ .food .items-sushi {
@@ -1300,7 +1594,8 @@ body {
   cursor: pointer;
   position: absolute;
   left: 40%;
-  top: 85%;
+  top: 87%;
+  z-index: 1000;
   width: 20vw;
   height: 3vw;
   line-height: 3vw;
@@ -1426,8 +1721,7 @@ body {
 
 .button3_checkbox:checked ~ .iframe {
   display: inline-block;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
 }
 
 .button3_checkbox:checked ~ .restaurant-link .restaurant-btn {
@@ -1438,6 +1732,263 @@ body {
   left: 0%;
   top: -5%;
   color: rgba(0, 0, 0, 0.8);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /*This is 10px */
+  /*10 px equals to 0.625rem*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1c35;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/Overpass.jpg);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/Overpass.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  background-attachment: fixed;
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  width: 97%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 20rem;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+  background-attachment: fixed;
+  top: -15rem;
+}
+
+.second {
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  background-image: url(../media/restaurant2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15%;
+  background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+}
+
+.videogames_title {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  color: #cffae9;
+  font-family: 'Acme', cursive;
+  text-shadow: 3px 3px #181717;
+  text-align: center;
+  -webkit-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+}
+
+@media (min-width: 1332px) {
+  .videogames_title {
+    font-size: 4.5vw;
+  }
+}
+
+.videogames_description {
+  width: 25vw;
+  font-family: 'Acme', cursive;
+  color: #ecfeff;
+  font-size: 2vw;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  /*This is 10px */
+  /*10 px equals to 0.625rem*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1c35;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(31, 40, 51, 0.3)), to(rgba(102, 252, 241, 0.4))), url(../media/Overpass.jpg);
+  background-image: linear-gradient(to right bottom, rgba(31, 40, 51, 0.3), rgba(102, 252, 241, 0.4)), url(../media/Overpass.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 1.2%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+          clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0% 30%);
+  -webkit-animation-name: woah;
+          animation-name: woah;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  background-attachment: fixed;
+}
+
+@keyframes woah {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.first {
+  position: relative;
+  height: 100vh;
+  width: 97%;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(20, 1, 1, 0)), to(rgba(0, 4, 219, 0.377))), url(../media/both.jpg);
+  background-image: linear-gradient(to left bottom, rgba(20, 1, 1, 0), rgba(0, 4, 219, 0.377)), url(../media/both.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 20rem;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
+  background-attachment: fixed;
+  top: -15rem;
+}
+
+.second {
+  position: relative;
+  height: 100vh;
+  width: 95%;
+  background-image: url(../media/restaurant2.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  top: -15%;
+  background-attachment: fixed;
+}
+
+.third {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  width: 96%;
+  background-image: url(../media/esports.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 15rem;
+  margin-top: -4%;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
 }
 
 .gradient {
@@ -1454,15 +2005,15 @@ body {
 
 @media (min-width: 1332px) {
   .video {
-    -webkit-transform: translateY(-35%) scaleY(0.45);
-            transform: translateY(-35%) scaleY(0.45);
+    -webkit-transform: translateY(-42%) scaleY(0.45);
+            transform: translateY(-42%) scaleY(0.45);
   }
 }
 
 @media (min-width: 300px) {
   .video {
-    -webkit-transform: translateY(-35%) scaleY(0.45);
-            transform: translateY(-35%) scaleY(0.45);
+    -webkit-transform: translateY(-42%) scaleY(0.45);
+            transform: translateY(-42%) scaleY(0.45);
   }
 }
 
@@ -1472,8 +2023,8 @@ body {
   background-size: cover;
   z-index: 1;
   position: absolute;
-  -webkit-transform: scaleY(0.13) translateY(-1040%);
-          transform: scaleY(0.13) translateY(-1040%);
+  -webkit-transform: scaleY(0.13) translateY(-1092%);
+          transform: scaleY(0.13) translateY(-1092%);
 }
 
 .viddescription {
@@ -1494,5 +2045,61 @@ body {
   color: rgba(2, 162, 255, 0.863);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.action {
+  display: inline-block;
+  width: 20vw;
+  height: 4vw;
+  background-color: #0e0909;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  top: 200%;
+  font-family: 'Acme', cursive;
+  color: #cffae9;
+  font-weight: bold;
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.action::before, .action::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.action::before {
+  border-bottom-width: 0.5vw;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 204, 255, 0.85);
+  border-left-width: 0.5vw;
+  border-left-color: rgba(0, 204, 255, 0.85);
+  border-left-style: solid;
+  width: 10%;
+  height: 33%;
+  left: -0.5vw;
+  bottom: -0.5vw;
+}
+
+.action::after {
+  border-top-width: 0.5vw;
+  border-top-color: rgba(0, 204, 255, 0.85);
+  border-top-style: solid;
+  border-right-width: 0.5vw;
+  border-right-color: rgba(0, 204, 255, 0.85);
+  border-right-style: solid;
+  width: 10%;
+  height: 33%;
+  top: -0.5vw;
+  right: -0.5vw;
+}
+
+.action:hover::before, .action:hover::after {
+  width: 102.5%;
+  height: 110%;
 }
 /*# sourceMappingURL=style.css.map */

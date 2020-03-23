@@ -15,6 +15,9 @@ body {
     animation-name: first;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
@@ -52,7 +55,7 @@ body {
 .first {
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 97%;
     background-image: linear-gradient(
         to left bottom,
         rgba(20, 1, 1, 0),
@@ -62,6 +65,7 @@ body {
     background-size: cover;
     background-position: center;
     border: 20rem;
+    margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     clip-path: polygon(50% 20%, 50% 20%, 100% 0, 100% 100%, 94% 100%, 0 100%, 0 100%, 0 0);
@@ -74,15 +78,31 @@ body {
 .second {
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 95%;
     background-image: 
     url(../media/restaurant2.jpg);
     background-size: cover;
     background-position: center;
     border: 15rem;
-    margin-top: auto;
+    margin-top: 1.5%;
     margin-left: auto;
     margin-right: auto;
     top: -15%;
     background-attachment: fixed;
+}
+
+.third {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    width: 96%;
+    background-image: url(../media/esports.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 15rem;
+    margin-top: -4%;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: fixed;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 7%, 100% 70%, 95% 100%, 7% 100%, 0% 70%, 0 5%);
 }

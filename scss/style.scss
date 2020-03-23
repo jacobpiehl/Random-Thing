@@ -104,6 +104,7 @@
     text-align: center;
     font-family: 'Acme', cursive;
     text-shadow: 3px 3px rgb(24, 23, 23);
+    backdrop-filter: blur(3px);
     @include phone {
         transform: translateY(6.5rem);
 
@@ -130,4 +131,8 @@
 
 @import "_food.scss";
 
+@import "_games.scss";
+
+
 @import "_video.scss";
+

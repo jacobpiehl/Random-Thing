@@ -1,0 +1,28 @@
+@import "_variables.scss" ;
+@import "_setup.scss";
+
+.videogames_title {
+    backdrop-filter: blur(3px);
+    color: rgb(207, 250, 233);
+    font-family: 'Acme', cursive;
+    text-shadow: 3px 3px rgb(24, 23, 23);
+    text-align: center;
+    transform: translate(0%, -40%);
+
+    @include desktop {
+        font-size: 4.5vw;
+    }
+}
+
+.videogames_description {
+    width: 25vw;
+    font-family: 'Acme', cursive;
+    color: rgb(236, 254, 255);
+
+    font-size: 2vw;
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    
+}
