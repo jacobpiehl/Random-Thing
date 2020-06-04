@@ -7,14 +7,24 @@
 }
 
 .overview{
-    font-size: 2vw;
     font-family: 'Patua One', cursive;
     color: rgb(214, 255, 252);
     background-color: rgba(13, 52, 75, 0.705);
     border-style: outset;
     border-width: 1vw;
     border-color: rgba(2, 0, 117, 0.753);
-    transform: translate(10%, 30%);
+    @include phone {
+        font-size: 4.5vw;
+        transform: translate(10%, 35%);
+    }
+    @include tablet {
+        font-size: 3.5vw;
+        transform: translate(12.5%, 35%);
+    }
+    @include desktop {
+        font-size: 2vw;
+        transform: translate(10%, 30%);
+    }
 }
 
 .card1 {
@@ -28,6 +38,18 @@
     margin-left: auto;
     margin-right: auto;
     transform: translateX(65%);
+    @include phone {
+        top: 45%;
+        left: 62.5%;
+    }
+    @include tablet {
+        top: 45%;
+        left: 62.5%;
+    }
+    @include desktop {
+        top: 40%;
+        left: 65%;
+    }
     /*display: flex;
     flex-direction: row;
     justify-content: space-around; */
@@ -49,6 +71,18 @@
     margin-left: auto;
     margin-right: auto;
     transform: translateX(65%);
+    @include phone {
+        top: 70%;
+        left: 62.5%;
+    }
+    @include tablet {
+        top: 70%;
+        left: 62.5%;
+    }
+    @include desktop {
+        top: 70%;
+        left: 65%;
+    }
 }
 
 @mixin cardposition {
@@ -62,6 +96,18 @@
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
     top: 10%;
+    @include phone {
+        height: 25vw;
+        width: 15vw;
+    }
+    @include tablet {
+        height: 25vw;
+        width: 15vw;
+    }
+    @include desktop  {
+        height: 11vw;
+        width: 8vw;
+    }
     
     /*@include phone {
         transform: translateY(-25rem);
@@ -125,16 +171,25 @@
 
 
 .culture {
-
+    text-align: center;
     font-family: 'ZCOOL QingKe HuangYou', ;
     background-color: rgba(0, 0, 0, 0.438);
     color: rgb(255, 0, 0);
     font-size: 2rem;
     font-weight: 1000;
     position: absolute;
-    top: 30%;
     left: 40%;
-
+    top: 90%;
+    @include phone {
+        left: 7.5%;
+        top: 90%;
+        font-size: 1.5rem;
+    }
+    @include tablet {
+        left: 40%;
+        top: 90%;
+        font-size: 2rem;
+    }
 }
 
 
@@ -158,12 +213,27 @@
 .card1:active .card-side-then {
     visibility: visible;
     transform: translateX(-150%);
+    @include phone {
+        transform: translateX(-125%)
+    }
+    @include tablet {
+        transform: translateX(-125%)
+    }
+    @include desktop {
+        transform: translateX(-150%)
+    }
 
 }
 
 .card1:active .card-side-back {
     left: 70%;
     backface-visibility: visible;
+    @include phone {
+        transform: translateX(125%)
+    }
+    @include tablet {
+        transform: translateX(125%)
+    }
     @include desktop {
         transform: translateX(150%)
     }
@@ -266,17 +336,32 @@
 .card2:active .card-side2-front {
     backface-visibility: visible;
     transform: rotateY(360deg);
+
 }
 
 .card2:active .card-side2-then {
     visibility: visible;
-    transform: translateX(-150%);
+    @include phone {
+        transform: translateX(-125%)
+    }
+    @include tablet {
+        transform: translateX(-125%)
+    }
+    @include desktop {
+        transform: translateX(-150%)
+    }
 
 }
 
 .card2:active .card-side2-back {
     left: 70%;
     backface-visibility: visible;
+    @include phone {
+        transform: translateX(125%)
+    }
+    @include tablet {
+        transform: translateX(125%)
+    }
     @include desktop {
         transform: translateX(150%)
     }
@@ -290,18 +375,37 @@
 .button1 {
     width: 10vw;
     height: 5vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: bold;
     text-align: center;
     color: rgb(201, 158, 49);
-    background-color: rgba(0, 15, 102, 0.733);
+    background-color: rgba(0, 32, 214, 0.5);
     border-style: outset;;
     border-color: cyan;
     border-width: 1vw;
     position: absolute;
-    left: 70%;
-    top: 15%;
     cursor: pointer;
+    @include phone {
+        left: 47.5%;
+        top: 27.5%;
+        width: 40vw;
+        height: 20vw;
+        font-size: 5.55vw;
+    }
+    @include tablet {
+        left: 52.5%;
+        top: 27.5%;
+        width: 30vw;
+        height: 15vw;
+        font-size: 4vw;
+    }
+    @include desktop {
+        left: 70%;
+        top: 15%;
+        width: 10vw;
+        height: 5vw;
+        font-size: 1.2vw;
+    }
 }
 
 .button1:hover {
@@ -309,7 +413,7 @@
     filter: drop-shadow(4vw 4vw 4vw black);
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
-    background-color: rgba(255, 0, 0, 0.589);
+    background-color: rgb(0, 89, 255);
 
 }
 
@@ -354,14 +458,30 @@
 
 .button_checkbox:checked~.card1 .card-side-then {
     visibility: visible;
-    transform: translateX(-150%);
+    @include phone {
+        transform: translateX(-125%)
+    }
+    @include tablet {
+        transform: translateX(-125%)
+    }
+    @include desktop {
+        transform: translateX(-150%)
+    }
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
 
 .button_checkbox:checked~.card2 .card-side2-then {
     visibility: visible;
-    transform: translateX(-150%);
+    @include phone {
+        transform: translateX(-125%)
+    }
+    @include tablet {
+        transform: translateX(-125%)
+    }
+    @include desktop {
+        transform: translateX(-150%)
+    }
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
@@ -369,6 +489,12 @@
 .button_checkbox:checked~.card1 .card-side-back {
     left: 70%;
     backface-visibility: visible;
+    @include phone {
+        transform: translateX(125%)
+    }
+    @include tablet {
+        transform: translateX(125%)
+    }
     @include desktop {
         transform: translateX(150%)
     }
@@ -379,6 +505,12 @@
 .button_checkbox:checked~.card2 .card-side2-back {
     left: 70%;
     backface-visibility: visible;
+    @include phone {
+        transform: translateX(125%)
+    }
+    @include tablet {
+        transform: translateX(125%)
+    }
     @include desktop {
         transform: translateX(150%)
     }

@@ -19,9 +19,20 @@
     text-align: center;
     transform: translate(550%, -100%);
     backdrop-filter: blur(3px);
-
+    @include phone {
+        font-size: 15vw;
+        transform: translate(50%, -250%);
+        position: absolute;
+    }
+    @include tablet {
+        font-size: 8.5vw;
+        transform: translate(190%, -175%);
+        position: absolute;
+    }
     @include desktop {
         font-size: 3.5vw;
+        transform: translate(550%, -100%);
+        position: initial;
     }
 }
 
@@ -34,22 +45,43 @@
     font-family: 'Acme', cursive;
     background-color: rgba(0, 0, 0, 0.733);
     transform: translate(50%, -70%);
+    @include phone{
+        font-size: 4vw;
+        transform: translate(5%, 10%);
+        width: 90%;
+    }
+    @include tablet{
+        font-size: 2.5vw;
+        transform: translate(25%, 30%);
+        width: 70%;
+    }
+    @include desktop {
+        font-size: 1.5vw;
+        transform: translate(50%, -70%);
+        width: 50%;
+    }
 }
 
 .iframe {
     display: none;
     z-index: 1500;
     @include phone {
-        height: 30vw;
-        width: 45vw;
+        height: 125vw;
+        width: 60vw;
+        transform: translate(-10%, -50%);
+    }
+    @include tablet {
+        height: 95vw;
+        width: 60vw;
+        transform: translate(-10%, -20%);
     }
     @include desktop {
         height: 30vw;
         width: 50vw;
+        transform: translate(0%, -85%);
     }
     position: fixed;
     left: 25%;
-    transform: translate(0%, -85%);
 
 }
 
@@ -60,6 +92,9 @@
     @include phone {
         top: -15%;
     }
+    @include tablet {
+        top: -15%;
+    }
 }
 
 .food2 {
@@ -67,18 +102,33 @@
     display: flex;
     justify-content: space-around;
     @include phone {
-        top: -10%;
+        top: -15%;
+    }
+    @include tablet {
+        top: -15%;
     }
 }
 
 .items {
+    position: absolute;
     @include phone {
+        height: 25vw;
+        width: 25vw;
+        filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
+        top: -1rem;
+    }
+    @include tablet {
+        height: 20vw;
+        width: 20vw;
+        filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
+        top: 1rem;
+    }
+    @include desktop{
         height: 10vw;
         width: 14vw;
         filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
+        top: -8rem;
     }
-    position: absolute;
-    top: -8rem;
 }
 
 .items-sushi {
@@ -86,7 +136,16 @@
     background-position: center;
     background-size: cover;
     position: absolute;
-    left: 21%;
+    left: 10%;
+    @include phone {
+        left: 3.5%;
+    }
+    @include tablet {
+        left: 10%;
+    }
+    @include desktop {
+        left: 21%;
+    }
  
 }
 
@@ -102,6 +161,15 @@
     background-size: cover;
     position: absolute;
     left: 65%;
+    @include phone{
+        left: 68.5%;
+    }
+    @include tablet {
+        left: 68.5%;
+    }
+    @include desktop {
+        left: 65%;
+    }
 
 }
 
@@ -112,6 +180,15 @@
     background-size: cover;
     position: absolute;
     left: 21%;
+    @include phone{
+        left: 3.5%;
+    }
+    @include tablet {
+        left: 10%;
+    }
+    @include desktop {
+        left: 21%;
+    }
 
 }
 
@@ -129,6 +206,15 @@
     background-size: cover;
     position: absolute;
     left: 65%;
+    @include phone {
+        left: 68.5%;
+    }
+    @include tablet {
+        left: 68.5%;
+    }
+    @include desktop {
+        left: 65%;
+    }
 
 
 }
@@ -165,7 +251,7 @@
     text-align: center;
     position: absolute;
     left: 40%;
-    top: 40%;
+    top: 36.5%;
     font-family: 'Acme', cursive;
     color: rgb(207, 250, 233);
     font-weight: bold;
@@ -173,6 +259,27 @@
     border-radius: 0.5vw;
     text-decoration: none;
     cursor: pointer;
+    @include phone{
+        width: 60vw;
+        height: 25vw;
+        left: 17.5%;
+        top: 60%;
+        font-size: 6vw;
+    }
+    @include tablet {
+        width: 30vw;
+        height: 20vw;
+        left: 35%;
+        top: 55%;
+        font-size: 4vw;
+    }
+    @include desktop {
+        width: 20vw;
+        height: 4vw;
+        left: 40%;
+        top: 36.5%;
+        font-size: 1.2vw;
+    }
     
 }
 
@@ -193,6 +300,24 @@
     height: 33%;
     left: -1vw;
     bottom: -1vw;
+    @include phone {
+        border-bottom-width: 2vw;
+        border-left-width: 2vw;
+        left: -2.5vw;
+        bottom: -3vw;
+    }
+    @include tablet {
+        border-bottom-width: 2vw;
+        border-left-width: 2vw;
+        left: -2.5vw;
+        bottom: -3vw;
+    }
+    @include desktop {
+        border-bottom-width: 0.5vw;
+        border-left-width: 0.5vw;
+        left: -1vw;
+        bottom: -1vw;
+    }
 }
 
 .button2::after {
@@ -206,11 +331,41 @@
     height: 33%;
     top: -1vw;
     right: -1vw;
+    @include phone{
+        border-top-width: 2vw;
+        border-right-width: 2vw;
+        top: -2.5vw;
+        right: -3vw;
+    }
+    @include tablet {
+        border-top-width: 2vw;
+        border-right-width: 2vw;
+        top: -2.5vw;
+        right: -3vw;
+    }
+    @include desktop {
+        border-top-width: 0.5vw;
+        border-right-width: 0.5vw;
+        top: -1vw;
+        right: -1vw;
+    }
 }
 
 .button2:hover::before, .button2:hover::after  {
     width: 107.5%;
     height: 126%;
+    @include phone {
+        width: 106%;
+        height: 106%;
+    }
+    @include tablet {
+        width: 112%;
+        height: 112%;
+    }
+    @include desktop {
+        width: 107.5%;
+        height: 126%;
+    }
 }
 
 .button2_checkbox:checked ~ .food .items-sushi{
@@ -269,6 +424,21 @@
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.76);
     border-width: 1vw;
+    @include phone {
+        font-size: 3.5vw;
+        transform: translateY(330%);
+        border-width: 1vw;
+    }
+    @include tablet {
+        font-size: 3vw;
+        transform: translateY(330%);
+        border-width: 1vw;
+    }
+    @include desktop {
+        font-size: 1vw;
+        transform: translateY(275%);
+        border-width: 1vw;
+    }
 }
 
 .restaurant-btn {
@@ -297,6 +467,30 @@
     animation-delay: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    @include phone {
+        left: 30%;
+        top: 80%;
+        width: 40vw;
+        height: 25vw;
+        line-height: 7.5vw;
+        font-size: 25px;
+    }
+    @include tablet {
+        left: 30%;
+        top: 80%;
+        width: 40vw;
+        height: 15vw;
+        line-height: 7vw;
+        font-size: 45px;
+    }
+    @include desktop {
+        left: 40%;
+        top: 87%;
+        width: 20vw;
+        height: 3vw;
+        line-height: 3vw;
+        font-size: 22px;
+    }
     &:before {
       position: absolute;
       content: "";

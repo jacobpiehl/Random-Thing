@@ -1,0 +1,114 @@
+@import "_variables.scss" ;
+@import "_setup.scss";
+
+
+.icons {
+    font-size: 3vw;
+    width: 20vw;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include phone {
+        font-size: 5vw;
+    }
+    @include tablet {
+        font-size: 4.5vw;
+    }
+    @include desktop {
+        font-size: 3vw;
+    }
+
+}
+
+.Taught {
+    color: rgb(0, 0, 0);
+}
+
+#Jacob {
+    color: rgb(0, 225, 255);
+}
+
+#Whalen {
+    color: rgb(255, 0, 0);
+}
+
+
+.credits {
+    min-height: 5vw;
+    max-width: 100%;
+    font-family: 'Acme', cursive;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgba(0, 43, 185, 0.87);
+    background-position: center;
+    background-size: cover;
+    border-style: ridge;
+    border-width: 0.5vw;
+    border-color: rgba(0, 3, 161, 0.5);
+    @include phone {
+        font-size: 4vw;
+    }
+    @include tablet {
+        font-size: 4vw;
+    }
+    @include desktop {
+        font-size: 2.5vw;
+    }
+
+}
+
+.fab {
+    margin-top: 2.5vw;
+    @include phone {
+        margin-top: 4vw;
+    }
+    @include tablet {
+        margin-top: 4vw;
+    }
+    @include desktop {
+        margin-top: 2.5vw;
+    }
+}
+
+
+.fa-instagram-square:before {
+    content: "\f955";
+}
+
+.fa-instagram-square:hover {
+    color: color(sakura);
+    transition-duration: 0.5s;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-twitter:hover {
+    transition-duration: 0.5s;
+    color: color(primary-light);
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+
+}
+
+.fa-facebook-square:hover {
+    transition-duration: 0.5s;
+    color: color(primary-med);
+}
+
+.fa-twitch:before {
+    content: "\f1e8";
+}
+
+.fa-twitch:hover {
+    transition-duration: 0.5s;
+    color: color(purpur);
+}
+

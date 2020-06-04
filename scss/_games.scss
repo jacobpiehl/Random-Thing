@@ -8,9 +8,17 @@
     text-shadow: 3px 3px rgb(24, 23, 23);
     text-align: center;
     transform: translate(0%, -40%);
-
+    @include phone {
+        font-size: 12vw;
+        transform: translate(0%, -10%);
+    }
+    @include tablet {
+        font-size: 9vw;
+        transform: translate(0%, -40%);
+    }
     @include desktop {
         font-size: 4.5vw;
+        transform: translate(0%, -40%);
     }
 }
 
@@ -24,5 +32,647 @@
     position: absolute;
     top: 10%;
     left: 5%;
+    @include phone {
+        width: 80vw;
+        font-size: 5.5vw;
+        top: 10%;
+        left: 7.5%;
+    }
+    @include tablet {
+        width: 30vw;
+        font-size: 4vw;
+        top: 10%;
+        left: 10%;
+    }
+    @include desktop {
+        width: 25vw;
+        font-size: 2vw;
+        top: 10%;
+        left: 5%;
+    }
     
+}
+
+.games {
+    width: 25vw;
+    height: 25vw;
+    @include phone {
+        width: 20vw;
+        height: 20vw;
+    }
+    @include tablet {
+        width: 15vw;
+        height: 15vw;
+    }
+    @include desktop {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+}
+
+.mario {
+    position: absolute;
+    left: 60%;
+    @include phone {
+        left: 37.5%;
+        top: 33%;
+    }
+    @include tablet {
+        left: 62.5%;
+        top: 20%;
+    }
+    @include desktop {
+        left: 60%;
+        top: 25%;
+    }
+}
+
+.pokemon {
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    @include phone {
+        left: 3%;
+        top: 47.5%;
+    }
+    @include tablet {
+        left: 43%;
+        top: 40%;
+    }
+    @include desktop {
+        left: 47%;
+        top: 50%;
+    }
+}
+
+.monsterhunter {
+    position: absolute;
+    left: 73%;
+    top: 50%;
+    @include phone {
+        left: 73%;
+        top: 47.5%;
+    }
+    @include tablet {
+        left: 82.5%;
+        top: 40%;
+    }
+    @include desktop {
+        left: 73%;
+        top: 50%;
+    }
+
+}
+
+.fireemblem {
+    position: absolute;
+    left: 60%;
+    top: 68.25%;
+    @include phone{
+        left: 37.5%;
+        top: 65%;
+    }
+    @include tablet {
+        left: 62.5%;
+        top: 60%;
+    }
+    @include desktop {
+        left: 60%;
+        top: 68.25%;
+    }
+}
+
+.mario-text {
+    text-align: center;
+    font-size: 0.75vw;
+    font-family: 'Acme', cursive;
+    color: rgb(207, 250, 233);
+    background-color: rgba(12, 0, 117, 0.705);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.76);
+    border-width: 1vw;
+    @include phone {
+        font-size: 2.8vw;
+        border-width: 1vw;
+    }
+    @include tablet {
+        font-size: 2vw;
+        border-width: 1vw;
+    }
+    @include desktop {
+        font-size: 1vw;
+        border-width: 1vw;
+    }
+}
+
+.poke-text {
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Acme', cursive;
+    color: rgb(207, 250, 233);
+    background-color: rgba(12, 0, 117, 0.705);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.76);
+    border-width: 1vw;
+    @include phone {
+        font-size: 5vw;
+        border-width: 1vw;
+        transform: translateY(-40%);
+    }
+    @include tablet {
+        font-size: 2vw;
+        border-width: 1vw;
+        transform: translateY(0%);
+    }
+    @include desktop {
+        font-size: 1vw;
+        border-width: 1vw;
+        transform: translateY(0%);
+    }
+}
+
+.MH-text {
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Acme', cursive;
+    color: rgb(207, 250, 233);
+    background-color: rgba(12, 0, 117, 0.705);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.76);
+    border-width: 1vw;
+    @include phone {
+        font-size: 3vw;
+        border-width: 1vw;
+    }
+    @include tablet {
+        font-size: 2vw;
+        border-width: 1vw;
+    }
+    @include desktop {
+        font-size: 1vw;
+        border-width: 1vw;
+    }
+}
+.FE-text {
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Acme', cursive;
+    color: rgb(207, 250, 233);
+    background-color: rgba(12, 0, 117, 0.705);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.76);
+    border-width: 1vw;
+    @include phone {
+        font-size: 4vw;
+        border-width: 1vw;
+    }
+    @include tablet {
+        font-size: 2vw;
+        border-width: 1vw;
+    }
+    @include desktop {
+        font-size: 1vw;
+        border-width: 1vw;
+    }
+}
+
+.gamebutton {
+    position: absolute;
+    left: 61.25%;
+    top: 55%;
+    width: 5vw;
+    cursor: pointer;
+    @include phone{
+        left: 32.5%;
+        top: 45%;
+        width: 30vw;
+    }
+    @include tablet {
+        left: 60%;
+        top: 35%;
+        width: 20vw;
+    }
+    @include desktop {
+        left: 61.25%;
+        top: 55%;
+        width: 5vw;
+    }
+    
+}
+
+.gbutton {
+    text-align: center;
+    font-size: 0.75vw;
+    font-family: 'Acme', cursive;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    background-color: rgba(0, 36, 66, 0.78);
+    border-style: solid;
+    border-color: rgba(0, 13, 129, 0.76);
+    border-width: 0.2vw;
+    @include phone{
+        font-size: 5vw;
+        border-width: 1vw;
+    }
+    @include tablet {
+        font-size: 4vw;
+        border-width: 1vw;
+    }
+    @include desktop {
+        font-size: 0.75vw;
+        border-width: 0.2vw;
+    }
+}
+
+.gamebutton:hover ~ .mario {
+    @include phone{
+        animation-name: vp1;
+    }
+    @include tablet {
+        animation-name: vm1;
+    }
+    @include desktop {
+        animation-name: v1;
+    }
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.gamebutton:hover ~ .pokemon {
+    @include phone{
+        animation-name: vp2;
+    }
+    @include tablet {
+        animation-name: vm2;
+    }
+    @include desktop {
+        animation-name: v2;
+    }
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.gamebutton:hover ~ .monsterhunter {
+    @include phone {
+        animation-name: vp3;
+    }
+    @include tablet {
+        animation-name: vm3;
+    }
+    @include desktop {
+        animation-name: v3;
+    }
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.gamebutton:hover ~ .fireemblem {
+    @include phone {
+        animation-name: vp4;
+    }
+    @include tablet {
+        animation-name: vm4;
+    }
+    @include desktop {
+        animation-name: v4;
+    }
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+.gamebutton:hover ~ .mario .games {
+    box-shadow: 1vw 1vw 1vw black;
+    transition-duration: 1s;
+}
+
+.gamebutton:hover ~ .pokemon .games {
+    box-shadow: 1vw 1vw 1vw black;
+    transition-duration: 1s;
+}
+
+.gamebutton:hover ~ .monsterhunter .games {
+    box-shadow: 1vw 1vw 1vw black;
+    transition-duration: 1s;
+}
+
+.gamebutton:hover ~ .fireemblem .games {
+    box-shadow: 1vw 1vw 1vw black;
+    transition-duration: 1s;
+}
+
+
+@keyframes v1{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(160%) translateY(0%);
+    }
+    40%{
+        transform: translateX(160%) translateY(170%);
+    }
+    60%{
+        transform: translateX(-160%) translateY(170%);
+    }
+    80%{
+        transform: translateX(-160%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vm1{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(120%) translateY(0%);
+    }
+    40%{
+        transform: translateX(120%) translateY(225%);
+    }
+    60%{
+        transform: translateX(-120%) translateY(225%);
+    }
+    80%{
+        transform: translateX(-120%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+} 
+
+@keyframes vp1{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(160%) translateY(0%);
+    }
+    40%{
+        transform: translateX(160%) translateY(225%);
+    }
+    60%{
+        transform: translateX(-150%) translateY(225%);
+    }
+    80%{
+        transform: translateX(-150%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+} 
+
+@keyframes v2{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(-100%);
+    }
+    40%{
+        transform: translateX(330%) translateY(-100%);
+    }
+    60%{
+        transform: translateX(330%) translateY(70%);
+    }
+    80%{
+        transform: translateX(0%) translateY(70%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vm2{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(-120%);
+    }
+    40%{
+        transform: translateX(250%) translateY(-120%);
+    }
+    60%{
+        transform: translateX(250%) translateY(120%);
+    }
+    80%{
+        transform: translateX(0%) translateY(120%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vp2{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(-85%);
+    }
+    40%{
+        transform: translateX(310%) translateY(-85%);
+    }
+    60%{
+        transform: translateX(310%) translateY(100%);
+    }
+    80%{
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+
+@keyframes v3{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(70%);
+    }
+    40%{
+        transform: translateX(-300%) translateY(70%);
+    }
+    60%{
+        transform: translateX(-300%) translateY(-100%);
+    }
+    80%{
+        transform: translateX(0%) translateY(-100%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vm3{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(120%);
+    }
+    40%{
+        transform: translateX(-250%) translateY(120%);
+    }
+    60%{
+        transform: translateX(-250%) translateY(-120%);
+    }
+    80%{
+        transform: translateX(0%) translateY(-120%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vp3{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(0%) translateY(85%);
+    }
+    40%{
+        transform: translateX(-310%) translateY(85%);
+    }
+    60%{
+        transform: translateX(-310%) translateY(-100%);
+    }
+    80%{
+        transform: translateX(0%) translateY(-100%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes v4{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(-160%) translateY(0%);
+    }
+    40%{
+        transform: translateX(-160%) translateY(-170%);
+    }
+    60%{
+        transform: translateX(160%) translateY(-170%);
+    }
+    80%{
+        transform: translateX(160%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+}
+
+@keyframes vm4{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(-120%) translateY(0%);
+    }
+    40%{
+        transform: translateX(-120%) translateY(-225%);
+    }
+    60%{
+        transform: translateX(120%) translateY(-225%);
+    }
+    80%{
+        transform: translateX(120%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+} 
+
+@keyframes vp4{
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    20%{
+        transform: translateX(-150%) translateY(0%);
+    }
+    40%{
+        transform: translateX(-150%) translateY(-200%);
+    }
+    60%{
+        transform: translateX(150%) translateY(-200%);
+    }
+    80%{
+        transform: translateX(150%) translateY(0%);
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+    }
+
+} 
+
+
+.arrow2 {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    @include phone{
+        top: 91%;
+        left: 35%;
+    }
+    @include tablet{
+        top: 80%;
+        left: 15%;
+    }
+    @include desktop{
+        top: 75%;
+        left: 20%;
+    }
+}
+
+.arrowgame {
+    position: absolute;
+    height: 10vw;
+    animation-name: bounce2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    @include phone {
+        height: 25vw;
+    }
+    @include tablet {
+        height: 27.5vw;
+    }
+    @include desktop {
+        height: 10vw;
+    }
+}
+
+@keyframes bounce2 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
 }

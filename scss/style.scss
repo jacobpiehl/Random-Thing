@@ -25,36 +25,84 @@
 
 .heading {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     color: lightblue;
-    font-size: 3.5vw;
     font-family: 'Acme', cursive;
     font-weight: 500;
     text-shadow: 3px 3px rgb(24, 23, 23);
+    @include phone {
+        font-size: 4.1vw;
+        text-shadow: 1.4px 1.4px rgb(24, 23, 23);
+        transform: scaleX(1.2) scaleY(1.6);
+        
+    }
+
+    @include tablet {
+        font-size: 4.2vw;
+        text-shadow: 3px 3px rgb(24, 23, 23);
+        transform: scaleX(1) scaleY(1);
+    }
+
+    @include desktop {
+        font-size: 3.5vw;
+        text-shadow: 3px 3px rgb(24, 23, 23);
+        transform: scaleX(1) scaleY(1);
+    }
+
+
 }
 
+
+
 .heading:hover {
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
     transition-timing-function: ease;
     color: rgb(255, 0, 0);
-    transform: scaleY(1.2) skew(5deg, -5deg);
 }
+
+.heading:hover .possibility {
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transform: translateX(-60%);
+}
+
+.heading:hover .possibility2 {
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transform: translateX(60%);
+}
+
 
 
 .entrance {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 35%;
+    top: 45%;
 }
 
 
 
 .gate {
-    height: 13vw;
-    width: 6.66vw;
+    @include phone {
+        height: 60vw;
+        width: 25vw;
+        transform: translateY(-20vw);
+    }
+    @include tablet {
+        height: 40vw;
+        width: 20vw;
+        transform: translateY(-15vw);
+    }
+    @include desktop {
+        height: 13vw;
+        width: 6.66vw;
+        transform: translateY(0vw);
+    }
+
 }
 
 .entrance:hover .gate-first{
@@ -62,6 +110,15 @@
     transition-duration: 0.7s;
     transition-timing-function: ease;
     filter: contrast(2);
+    @include phone {
+        transform: translateX(-10vw) translateY(-20vw);
+    }
+    @include tablet {
+        transform: translateX(-10vw) translateY(-15vw);
+    }
+    @include desktop {
+        transform: translateX(-10vw);
+    }
 }
 
 .entrance:hover .gate-last{
@@ -69,6 +126,15 @@
     transition-duration: 0.7s;
     transition-timing-function: ease;
     filter: contrast(2);
+    @include phone {
+        transform: translateX(10vw) translateY(-20vw);
+    }
+    @include tablet {
+        transform: translateX(10vw) translateY(-15vw);
+    }
+    @include desktop {
+        transform: translateX(10vw);
+    }
 }
 
 .arrow {
@@ -79,7 +145,15 @@
 .arrow1 {
     position: absolute;
     top: 80%;
-    height: 10vw;
+    @include phone {
+        height: 25vw;
+    }
+    @include tablet {
+        height: 25vw;
+    }
+    @include desktop {
+        height: 10vw;
+    }
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -106,15 +180,18 @@
     text-shadow: 3px 3px rgb(24, 23, 23);
     backdrop-filter: blur(3px);
     @include phone {
-        transform: translateY(6.5rem);
+        transform: translateY(17rem);
+        font-size: 7vw;
 
     }
     @include tablet {
-        transform: translateY(12rem);
+        transform: translateY(20rem);
+        font-size: 5vw;
     }
 
     @include desktop {
         transform: translateY(250%);
+        font-size: 3.29vw;
     }
 }
 
@@ -135,4 +212,7 @@
 
 
 @import "_video.scss";
+
+@import "_footer.scss";
+
 

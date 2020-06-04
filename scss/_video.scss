@@ -8,13 +8,14 @@
 }
 
 .video {
-    min-height: 200vw;
+    backdrop-filter: blur(2px);
+    min-height: 10vw;
     width: 100%;
     @include desktop {
-        transform: translateY(-42%) scaleY(0.45);
+        transform: translateY(0%) scaleY(0.45);
     }
     @include phone {
-        transform: translateY(-42%) scaleY(0.45);
+        transform: translateY(0%) scaleY(0.45);
     }
 }
 
@@ -23,7 +24,7 @@
     background-size: cover;
     z-index: 1;
     position: absolute;
-    transform: scaleY(0.13) translateY(-1092%);
+    transform: scaleY(0.13) translateY(-490%);
 
 }
 
@@ -63,6 +64,27 @@
     border-radius: 0.5vw;
     text-decoration: none;
     cursor: pointer;
+    @include phone {
+        width: 40vw;
+        height: 8vw;
+        left: 30%;
+        top: 200%;
+        font-size: 4.5vw;
+    }
+    @include tablet {
+        width: 40vw;
+        height: 8vw;
+        left: 30%;
+        top: 200%;
+        font-size: 4.5vw;
+    }
+    @include desktop {
+        width: 20vw;
+        height: 4vw;
+        left: 40%;
+        top: 200%;
+        font-size: 1.2vw;
+    }
     
 }
 
